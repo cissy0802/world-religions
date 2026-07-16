@@ -77,9 +77,13 @@ for F in $NEW_FILES; do
     grep -q "$F" index.html || { echo "ERROR: index.html does not reference $F"; exit 1; }
   fi
 
-  # Forbidden hardcoded scripts (auto-injected by GitHub Action)
+  # Shared scripts: per CLAUDE.md rule 4, new pages now ship WITH the 4 shared
+  # <script> tags so the inject-comments Action detects them and skips its
+  # auto-commit. A single inclusion is expected; guard only against genuine
+  # DUPLICATES (>1 occurrence), which would actually double-load a script.
   for s in comments.js search.js index-button.js i18n-tts.js; do
-    grep -q "$s" "$F" && { echo "ERROR: $F hardcodes $s (auto-injected, will duplicate)"; exit 1; }
+    n=$(grep -oF "$s" "$F" | wc -l | tr -d ' ')
+    [ "$n" -gt 1 ] && { echo "ERROR: $F includes $s $n times (duplicate, will double-load)"; exit 1; }
   done
   grep -q "← Hub" "$F" && echo "WARN: $F hardcodes ← Hub button (will be deduped, consider removing)"
 
