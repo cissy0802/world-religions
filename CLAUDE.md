@@ -28,3 +28,16 @@ TOPICS.md 是本仓选题的**唯一真相源**。以下三条每次运行都适
 **写编号 N 时**：在**两个** index 里找到该 N 的非链接 `<div class="entry">` 占位行，**原地改成** `<a class="entry" href="{本期文件名}">…</a>`（照本仓已写条目的样式，如有 `live`/上线徽章就一并加上），内部结构不变。`index.html` 用中文页文件名、`index.en.html` 用 `.en.html`。**绝不要**在末尾另 append 一行——否则和占位行重复。
 
 **每次运行先「对齐」**：运行开头先扫 `TOPICS.md`，凡是**没写**（无对应页）**且** index 里**没有对应行**的编号，按编号顺序补一条非链接 `<div class="entry">` 占位（`index.en.html` 翻成 house-style 英文、**勿泄漏中文**；`index.html` 用 TOPICS 中文裁成本仓 zh 风格）。**两个 index 都补。** 这样 BigCat / deep-research 往 TOPICS 加的新主题，下次运行会自动作为灰色条目出现；等真正写它时再原地转成链接。
+
+## 新页面必带共享脚本（免触发 inject-comments 机器人提交）
+
+生成任何 `*.html`（含 `.en.html`）时，在 `</body>` 前直接写入这 4 行，勿遗漏：
+
+```html
+<script src="https://cissy0802.github.io/comments.js" defer></script>
+<script src="https://cissy0802.github.io/search.js" defer></script>
+<script src="https://cissy0802.github.io/index-button.js" defer></script>
+<script src="https://cissy0802.github.io/i18n-tts.js" defer></script>
+```
+
+这样 CI 的 inject-comments 不会再对新页面追加自动提交。
