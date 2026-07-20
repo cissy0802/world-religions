@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>世界宗教 · 宗教关系网</title>
 <style>
   :root{
@@ -51,241 +52,227 @@
 </head>
 <body>
 <div class="wrap">
-
 <header class="top">
-  <div class="kicker">世界宗教 · World Religions</div>
-  <h1>宗教关系网</h1>
-  <div class="meta"><span>特别页 · 手工策展</span><span>只画强关联</span><span>节点可点击直达各 Day</span></div>
+<div class="kicker">世界宗教 · World Religions</div>
+<h1 data-tts="c6c9b41673580447">宗教关系网</h1>
+<div class="meta"><span>特别页 · 手工策展</span><span>只画强关联</span><span>节点可点击直达各 Day</span></div>
 </header>
-
 <p class="lede">没有一个宗教是凭空出现的。犹太教孕育了基督教，两者又构成伊斯兰教自我理解的背景；吠陀传统与沙门思潮长出了印度教、耆那教与佛教；佛教东传后与道教、儒家、神道彼此渗透。这张图把散落在各期「跨传统对读」里的联系收拢成一张网——<strong>实线是源流，虚线是影响，双头线是互摄</strong>。</p>
-
 <figure class="graph">
-<svg viewBox="0 0 940 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="世界宗教关系网络图">
-  <defs>
-    <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-      <path d="M0,0 L10,4 L0,8 z" fill="#3a4a63"/>
-    </marker>
-    <marker id="arrowd" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-      <path d="M0,0 L10,4 L0,8 z" fill="#a67c3d"/>
-    </marker>
-    <marker id="arrowdS" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="1" refY="4" orient="auto">
-      <path d="M10,0 L0,4 L10,8 z" fill="#a67c3d"/>
-    </marker>
-  </defs>
-
-  <!-- ===== 族群框 ===== -->
-  <rect x="20" y="30" width="440" height="494" rx="14" fill="none" stroke="#d8cdb0" stroke-dasharray="6 5"/>
-  <text x="36" y="52" font-size="12" fill="#8a8574" letter-spacing="2">亚伯拉罕传统</text>
-  <rect x="490" y="30" width="440" height="340" rx="14" fill="none" stroke="#d8cdb0" stroke-dasharray="6 5"/>
-  <text x="506" y="52" font-size="12" fill="#8a8574" letter-spacing="2">印度传统</text>
-  <rect x="490" y="410" width="440" height="270" rx="14" fill="none" stroke="#d8cdb0" stroke-dasharray="6 5"/>
-  <text x="506" y="432" font-size="12" fill="#8a8574" letter-spacing="2">东亚传统</text>
-  <rect x="20" y="556" width="440" height="150" rx="14" fill="none" stroke="#d8cdb0" stroke-dasharray="6 5"/>
-  <text x="36" y="578" font-size="12" fill="#8a8574" letter-spacing="2">非洲与离散</text>
-
-  <!-- ===== 边（先画线再画节点，避免线压字） ===== -->
-  <g stroke-width="1.8" fill="none">
-    <!-- 琐罗亚斯德教 ⇢ 犹太教 -->
-    <line x1="115" y1="108" x2="115" y2="158" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
-    <!-- 犹太教 → 基督教 -->
-    <line x1="115" y1="204" x2="115" y2="254" stroke="#3a4a63" marker-end="url(#arrow)"/>
-    <!-- 基督教 → 天主教 / 东正教 -->
-    <line x1="80" y1="300" x2="80" y2="350" stroke="#3a4a63" marker-end="url(#arrow)"/>
-    <line x1="150" y1="300" x2="232" y2="350" stroke="#3a4a63" marker-end="url(#arrow)"/>
-    <!-- 天主教 → 新教 -->
-    <line x1="120" y1="396" x2="200" y2="446" stroke="#3a4a63" marker-end="url(#arrow)"/>
-    <!-- 犹太教 ⇢ 伊斯兰教 / 基督教 ⇢ 伊斯兰教 -->
-    <line x1="190" y1="175" x2="298" y2="175" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
-    <line x1="190" y1="262" x2="298" y2="198" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
-    <!-- 伊斯兰教 → 苏菲主义 -->
-    <line x1="370" y1="204" x2="370" y2="266" stroke="#3a4a63" marker-end="url(#arrow)"/>
-    <!-- 伊斯兰教(什叶) → 巴哈伊 -->
-    <path d="M440,182 L458,182 L458,470 L442,470" stroke="#3a4a63" marker-end="url(#arrow)"/>
-    <!-- 苏菲 ⇢ 锡克教 -->
-    <line x1="440" y1="290" x2="518" y2="296" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
-    <!-- 吠陀 → 印度教 / 吠陀 ⇢ 沙门 -->
-    <line x1="655" y1="108" x2="613" y2="178" stroke="#3a4a63" marker-end="url(#arrow)"/>
-    <line x1="750" y1="86" x2="768" y2="86" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
-    <!-- 沙门 → 耆那教 / 佛教 -->
-    <line x1="845" y1="108" x2="845" y2="178" stroke="#3a4a63" marker-end="url(#arrow)"/>
-    <path d="M912,100 L922,100 L922,296 L912,296" stroke="#3a4a63" marker-end="url(#arrow)"/>
-    <!-- 印度教 ⇢ 锡克教 -->
-    <line x1="595" y1="224" x2="595" y2="284" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
-    <!-- 印度教 ⇄ 佛教 -->
-    <line x1="678" y1="232" x2="766" y2="290" stroke="#a67c3d" stroke-dasharray="5 4" marker-start="url(#arrowdS)" marker-end="url(#arrowd)"/>
-    <!-- 佛教 → 民间信仰（入华） -->
-    <path d="M800,320 L800,578 L717,578" stroke="#3a4a63" marker-end="url(#arrow)"/>
-    <!-- 佛教 ⇄ 神道 -->
-    <line x1="860" y1="320" x2="860" y2="598" stroke="#a67c3d" stroke-dasharray="5 4" marker-start="url(#arrowdS)" marker-end="url(#arrowd)"/>
-    <!-- 道教 / 儒家 ⇢ 民间信仰 -->
-    <line x1="569" y1="494" x2="612" y2="554" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
-    <line x1="714" y1="494" x2="672" y2="554" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
-    <!-- 约鲁巴 → 伏都/坎东布雷 -->
-    <line x1="190" y1="618" x2="248" y2="618" stroke="#3a4a63" marker-end="url(#arrow)"/>
-    <!-- 天主教 ⇢ 伏都/坎东布雷 -->
-    <path d="M80,396 C80,510 190,565 246,606" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
-  </g>
-
-  <!-- ===== 边标签 ===== -->
-  <g font-size="10.5" fill="#8a8574">
-    <text x="124" y="136">末世论·天使观</text>
-    <text x="124" y="232">1世纪·弥赛亚运动</text>
-    <text x="198" y="341" text-anchor="end">1054 大分裂</text>
-    <text x="176" y="425">16世纪宗教改革</text>
-    <text x="196" y="167">先知谱系的承认与重释</text>
-    <text x="378" y="238">内部密契之流</text>
-    <text x="476" y="340" transform="rotate(90 476,340)">经巴布运动 1844</text>
-    <text x="488" y="282" text-anchor="middle">苏菲影响</text>
-    <text x="700" y="122" text-anchor="middle">对吠陀祭祀的回应</text>
-    <text x="604" y="258">虔信(bhakti)土壤</text>
-    <text x="818" y="460" transform="rotate(90 818,460)">汉传入华(1世纪起)</text>
-    <text x="878" y="450" transform="rotate(90 878,450)">神佛习合</text>
-    <text x="640" y="542" text-anchor="middle">三教合一</text>
-    <text x="218" y="648" text-anchor="middle">跨大西洋</text>
-    <text x="92" y="548" text-anchor="end">殖民地天主教融合</text>
-  </g>
-
-  <!-- ===== 节点 ===== -->
-  <g font-family="Georgia,'Noto Serif SC',serif" text-anchor="middle">
-    <!-- 亚伯拉罕 -->
-    <a href="zoroastrianism-day17.html"><g class="node"><rect x="40" y="64" width="150" height="44" rx="9" fill="#fffdf8" stroke="#8a5a63" stroke-width="1.6"/>
-      <text x="115" y="82" font-size="13" fill="#2a3648">琐罗亚斯德教</text><text x="115" y="99" font-size="10" fill="#8a8574">D17</text></g></a>
-    <a href="judaism-day1.html"><g class="node"><rect x="40" y="160" width="150" height="44" rx="9" fill="#fffdf8" stroke="#3a4a63" stroke-width="1.6"/>
-      <text x="115" y="178" font-size="13" fill="#2a3648">犹太教</text><text x="115" y="195" font-size="10" fill="#8a8574">D1</text></g></a>
-    <a href="christianity-day2.html"><g class="node"><rect x="40" y="256" width="150" height="44" rx="9" fill="#fffdf8" stroke="#3a4a63" stroke-width="1.6"/>
-      <text x="115" y="274" font-size="13" fill="#2a3648">基督教</text><text x="115" y="291" font-size="10" fill="#8a8574">D2</text></g></a>
-    <a href="catholicism-day3.html"><g class="node"><rect x="30" y="352" width="128" height="44" rx="9" fill="#fffdf8" stroke="#3a4a63" stroke-width="1.6"/>
-      <text x="94" y="370" font-size="13" fill="#2a3648">天主教</text><text x="94" y="387" font-size="10" fill="#8a8574">D3</text></g></a>
-    <a href="orthodoxy-day4.html"><g class="node"><rect x="180" y="352" width="128" height="44" rx="9" fill="#fffdf8" stroke="#3a4a63" stroke-width="1.6"/>
-      <text x="244" y="370" font-size="13" fill="#2a3648">东正教</text><text x="244" y="387" font-size="10" fill="#8a8574">D4</text></g></a>
-    <a href="protestantism-day5.html"><g class="node"><rect x="180" y="448" width="128" height="44" rx="9" fill="#fffdf8" stroke="#3a4a63" stroke-width="1.6"/>
-      <text x="244" y="466" font-size="13" fill="#2a3648">新教</text><text x="244" y="483" font-size="10" fill="#8a8574">D5</text></g></a>
-    <a href="islam-day6.html"><g class="node"><rect x="300" y="160" width="140" height="44" rx="9" fill="#fffdf8" stroke="#3a4a63" stroke-width="1.6"/>
-      <text x="370" y="178" font-size="13" fill="#2a3648">伊斯兰教</text><text x="370" y="195" font-size="10" fill="#8a8574">D6 · 逊尼/什叶 D7</text></g></a>
-    <a href="sufism-day8.html"><g class="node"><rect x="300" y="268" width="140" height="44" rx="9" fill="#fffdf8" stroke="#3a4a63" stroke-width="1.6"/>
-      <text x="370" y="286" font-size="13" fill="#2a3648">苏菲主义</text><text x="370" y="303" font-size="10" fill="#8a8574">D8</text></g></a>
-    <a href="bahai-day18.html"><g class="node"><rect x="300" y="448" width="142" height="44" rx="9" fill="#fffdf8" stroke="#8a5a63" stroke-width="1.6"/>
-      <text x="371" y="466" font-size="13" fill="#2a3648">巴哈伊信仰</text><text x="371" y="483" font-size="10" fill="#8a8574">D18</text></g></a>
-    <!-- 印度 -->
-    <g class="node"><rect x="600" y="64" width="150" height="44" rx="9" fill="#f3efe6" stroke="#a89f88" stroke-width="1.4" stroke-dasharray="4 3"/>
-      <text x="675" y="82" font-size="13" fill="#5a5750">吠陀传统</text><text x="675" y="99" font-size="10" fill="#8a8574">背景源头</text></g>
-    <g class="node"><rect x="770" y="64" width="140" height="44" rx="9" fill="#f3efe6" stroke="#a89f88" stroke-width="1.4" stroke-dasharray="4 3"/>
-      <text x="840" y="82" font-size="13" fill="#5a5750">沙门思潮</text><text x="840" y="99" font-size="10" fill="#8a8574">背景源头</text></g>
-    <a href="hinduism-day9.html"><g class="node"><rect x="520" y="180" width="150" height="44" rx="9" fill="#fffdf8" stroke="#a67c3d" stroke-width="1.6"/>
-      <text x="595" y="198" font-size="13" fill="#2a3648">印度教</text><text x="595" y="215" font-size="10" fill="#8a8574">D9–10</text></g></a>
-    <a href="jainism-day11.html"><g class="node"><rect x="770" y="180" width="140" height="44" rx="9" fill="#fffdf8" stroke="#a67c3d" stroke-width="1.6"/>
-      <text x="840" y="198" font-size="13" fill="#2a3648">耆那教</text><text x="840" y="215" font-size="10" fill="#8a8574">D11</text></g></a>
-    <a href="https://cissy0802.github.io/buddhism/"><g class="node"><rect x="770" y="276" width="140" height="44" rx="9" fill="#fffdf8" stroke="#7a5c8a" stroke-width="2"/>
-      <text x="840" y="294" font-size="13" fill="#2a3648">佛教</text><text x="840" y="311" font-size="10" fill="#7a5c8a">→ 佛经站深读</text></g></a>
-    <a href="sikhism-day12.html"><g class="node"><rect x="520" y="286" width="150" height="44" rx="9" fill="#fffdf8" stroke="#a67c3d" stroke-width="1.6"/>
-      <text x="595" y="304" font-size="13" fill="#2a3648">锡克教</text><text x="595" y="321" font-size="10" fill="#8a8574">D12</text></g></a>
-    <!-- 东亚 -->
-    <a href="daoism-day13.html"><g class="node"><rect x="505" y="450" width="128" height="44" rx="9" fill="#fffdf8" stroke="#5a7a5f" stroke-width="1.6"/>
-      <text x="569" y="468" font-size="13" fill="#2a3648">道教</text><text x="569" y="485" font-size="10" fill="#8a8574">D13</text></g></a>
-    <a href="confucianism-day14.html"><g class="node"><rect x="650" y="450" width="128" height="44" rx="9" fill="#fffdf8" stroke="#5a7a5f" stroke-width="1.6"/>
-      <text x="714" y="468" font-size="13" fill="#2a3648">儒家</text><text x="714" y="485" font-size="10" fill="#8a8574">D14</text></g></a>
-    <a href="folk-religion-day16.html"><g class="node"><rect x="565" y="556" width="152" height="44" rx="9" fill="#fffdf8" stroke="#5a7a5f" stroke-width="1.6"/>
-      <text x="641" y="574" font-size="13" fill="#2a3648">东亚民间信仰</text><text x="641" y="591" font-size="10" fill="#8a8574">D16</text></g></a>
-    <a href="shinto-day15.html"><g class="node"><rect x="790" y="600" width="128" height="44" rx="9" fill="#fffdf8" stroke="#5a7a5f" stroke-width="1.6"/>
-      <text x="854" y="618" font-size="13" fill="#2a3648">神道教</text><text x="854" y="635" font-size="10" fill="#8a8574">D15</text></g></a>
-    <!-- 非洲与离散 -->
-    <a href="african-religions-day20.html"><g class="node"><rect x="40" y="596" width="150" height="44" rx="9" fill="#fffdf8" stroke="#8a5a63" stroke-width="1.6"/>
-      <text x="115" y="614" font-size="13" fill="#2a3648">约鲁巴传统</text><text x="115" y="631" font-size="10" fill="#8a8574">D20</text></g></a>
-    <a href="african-religions-day20.html"><g class="node"><rect x="250" y="596" width="190" height="44" rx="9" fill="#fffdf8" stroke="#8a5a63" stroke-width="1.6"/>
-      <text x="345" y="614" font-size="13" fill="#2a3648">伏都 · 坎东布雷</text><text x="345" y="631" font-size="10" fill="#8a8574">D20</text></g></a>
-  </g>
-
-  <!-- ===== 图例 ===== -->
-  <g font-size="11.5" fill="#5a5750">
-    <rect x="20" y="726" width="910" height="56" rx="10" fill="#efe9db"/>
-    <line x1="44" y1="754" x2="96" y2="754" stroke="#3a4a63" stroke-width="1.8" marker-end="url(#arrow)"/>
-    <text x="104" y="758">源流 / 衍生</text>
-    <line x1="220" y1="754" x2="272" y2="754" stroke="#a67c3d" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
-    <text x="280" y="758">思想影响 / 融合</text>
-    <line x1="430" y1="754" x2="482" y2="754" stroke="#a67c3d" stroke-width="1.8" stroke-dasharray="5 4" marker-start="url(#arrowdS)" marker-end="url(#arrowd)"/>
-    <text x="490" y="758">互摄 / 习合</text>
-    <rect x="620" y="742" width="60" height="24" rx="6" fill="#f3efe6" stroke="#a89f88" stroke-width="1.2" stroke-dasharray="4 3"/>
-    <text x="690" y="758">背景源头（无独立 Day）</text>
-  </g>
+<svg aria-label="世界宗教关系网络图" role="img" viewbox="0 0 940 800" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<marker id="arrow" markerheight="8" markerunits="userSpaceOnUse" markerwidth="10" orient="auto" refx="9" refy="4">
+<path d="M0,0 L10,4 L0,8 z" fill="#3a4a63"></path>
+</marker>
+<marker id="arrowd" markerheight="8" markerunits="userSpaceOnUse" markerwidth="10" orient="auto" refx="9" refy="4">
+<path d="M0,0 L10,4 L0,8 z" fill="#a67c3d"></path>
+</marker>
+<marker id="arrowdS" markerheight="8" markerunits="userSpaceOnUse" markerwidth="10" orient="auto" refx="1" refy="4">
+<path d="M10,0 L0,4 L10,8 z" fill="#a67c3d"></path>
+</marker>
+</defs>
+<!-- ===== 族群框 ===== -->
+<rect fill="none" height="494" rx="14" stroke="#d8cdb0" stroke-dasharray="6 5" width="440" x="20" y="30"></rect>
+<text fill="#8a8574" font-size="12" letter-spacing="2" x="36" y="52">亚伯拉罕传统</text>
+<rect fill="none" height="340" rx="14" stroke="#d8cdb0" stroke-dasharray="6 5" width="440" x="490" y="30"></rect>
+<text fill="#8a8574" font-size="12" letter-spacing="2" x="506" y="52">印度传统</text>
+<rect fill="none" height="270" rx="14" stroke="#d8cdb0" stroke-dasharray="6 5" width="440" x="490" y="410"></rect>
+<text fill="#8a8574" font-size="12" letter-spacing="2" x="506" y="432">东亚传统</text>
+<rect fill="none" height="150" rx="14" stroke="#d8cdb0" stroke-dasharray="6 5" width="440" x="20" y="556"></rect>
+<text fill="#8a8574" font-size="12" letter-spacing="2" x="36" y="578">非洲与离散</text>
+<!-- ===== 边（先画线再画节点，避免线压字） ===== -->
+<g fill="none" stroke-width="1.8">
+<!-- 琐罗亚斯德教 ⇢ 犹太教 -->
+<line marker-end="url(#arrowd)" stroke="#a67c3d" stroke-dasharray="5 4" x1="115" x2="115" y1="108" y2="158"></line>
+<!-- 犹太教 → 基督教 -->
+<line marker-end="url(#arrow)" stroke="#3a4a63" x1="115" x2="115" y1="204" y2="254"></line>
+<!-- 基督教 → 天主教 / 东正教 -->
+<line marker-end="url(#arrow)" stroke="#3a4a63" x1="80" x2="80" y1="300" y2="350"></line>
+<line marker-end="url(#arrow)" stroke="#3a4a63" x1="150" x2="232" y1="300" y2="350"></line>
+<!-- 天主教 → 新教 -->
+<line marker-end="url(#arrow)" stroke="#3a4a63" x1="120" x2="200" y1="396" y2="446"></line>
+<!-- 犹太教 ⇢ 伊斯兰教 / 基督教 ⇢ 伊斯兰教 -->
+<line marker-end="url(#arrowd)" stroke="#a67c3d" stroke-dasharray="5 4" x1="190" x2="298" y1="175" y2="175"></line>
+<line marker-end="url(#arrowd)" stroke="#a67c3d" stroke-dasharray="5 4" x1="190" x2="298" y1="262" y2="198"></line>
+<!-- 伊斯兰教 → 苏菲主义 -->
+<line marker-end="url(#arrow)" stroke="#3a4a63" x1="370" x2="370" y1="204" y2="266"></line>
+<!-- 伊斯兰教(什叶) → 巴哈伊 -->
+<path d="M440,182 L458,182 L458,470 L442,470" marker-end="url(#arrow)" stroke="#3a4a63"></path>
+<!-- 苏菲 ⇢ 锡克教 -->
+<line marker-end="url(#arrowd)" stroke="#a67c3d" stroke-dasharray="5 4" x1="440" x2="518" y1="290" y2="296"></line>
+<!-- 吠陀 → 印度教 / 吠陀 ⇢ 沙门 -->
+<line marker-end="url(#arrow)" stroke="#3a4a63" x1="655" x2="613" y1="108" y2="178"></line>
+<line marker-end="url(#arrowd)" stroke="#a67c3d" stroke-dasharray="5 4" x1="750" x2="768" y1="86" y2="86"></line>
+<!-- 沙门 → 耆那教 / 佛教 -->
+<line marker-end="url(#arrow)" stroke="#3a4a63" x1="845" x2="845" y1="108" y2="178"></line>
+<path d="M912,100 L922,100 L922,296 L912,296" marker-end="url(#arrow)" stroke="#3a4a63"></path>
+<!-- 印度教 ⇢ 锡克教 -->
+<line marker-end="url(#arrowd)" stroke="#a67c3d" stroke-dasharray="5 4" x1="595" x2="595" y1="224" y2="284"></line>
+<!-- 印度教 ⇄ 佛教 -->
+<line marker-end="url(#arrowd)" marker-start="url(#arrowdS)" stroke="#a67c3d" stroke-dasharray="5 4" x1="678" x2="766" y1="232" y2="290"></line>
+<!-- 佛教 → 民间信仰（入华） -->
+<path d="M800,320 L800,578 L717,578" marker-end="url(#arrow)" stroke="#3a4a63"></path>
+<!-- 佛教 ⇄ 神道 -->
+<line marker-end="url(#arrowd)" marker-start="url(#arrowdS)" stroke="#a67c3d" stroke-dasharray="5 4" x1="860" x2="860" y1="320" y2="598"></line>
+<!-- 道教 / 儒家 ⇢ 民间信仰 -->
+<line marker-end="url(#arrowd)" stroke="#a67c3d" stroke-dasharray="5 4" x1="569" x2="612" y1="494" y2="554"></line>
+<line marker-end="url(#arrowd)" stroke="#a67c3d" stroke-dasharray="5 4" x1="714" x2="672" y1="494" y2="554"></line>
+<!-- 约鲁巴 → 伏都/坎东布雷 -->
+<line marker-end="url(#arrow)" stroke="#3a4a63" x1="190" x2="248" y1="618" y2="618"></line>
+<!-- 天主教 ⇢ 伏都/坎东布雷 -->
+<path d="M80,396 C80,510 190,565 246,606" marker-end="url(#arrowd)" stroke="#a67c3d" stroke-dasharray="5 4"></path>
+</g>
+<!-- ===== 边标签 ===== -->
+<g fill="#8a8574" font-size="10.5">
+<text x="124" y="136">末世论·天使观</text>
+<text x="124" y="232">1世纪·弥赛亚运动</text>
+<text text-anchor="end" x="198" y="341">1054 大分裂</text>
+<text x="176" y="425">16世纪宗教改革</text>
+<text x="196" y="167">先知谱系的承认与重释</text>
+<text x="378" y="238">内部密契之流</text>
+<text transform="rotate(90 476,340)" x="476" y="340">经巴布运动 1844</text>
+<text text-anchor="middle" x="488" y="282">苏菲影响</text>
+<text text-anchor="middle" x="700" y="122">对吠陀祭祀的回应</text>
+<text x="604" y="258">虔信(bhakti)土壤</text>
+<text transform="rotate(90 818,460)" x="818" y="460">汉传入华(1世纪起)</text>
+<text transform="rotate(90 878,450)" x="878" y="450">神佛习合</text>
+<text text-anchor="middle" x="640" y="542">三教合一</text>
+<text text-anchor="middle" x="218" y="648">跨大西洋</text>
+<text text-anchor="end" x="92" y="548">殖民地天主教融合</text>
+</g>
+<!-- ===== 节点 ===== -->
+<g font-family="Georgia,'Noto Serif SC',serif" text-anchor="middle">
+<!-- 亚伯拉罕 -->
+<a href="zoroastrianism-day17.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#8a5a63" stroke-width="1.6" width="150" x="40" y="64"></rect>
+<text fill="#2a3648" font-size="13" x="115" y="82">琐罗亚斯德教</text><text fill="#8a8574" font-size="10" x="115" y="99">D17</text></g></a>
+<a href="judaism-day1.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#3a4a63" stroke-width="1.6" width="150" x="40" y="160"></rect>
+<text fill="#2a3648" font-size="13" x="115" y="178">犹太教</text><text fill="#8a8574" font-size="10" x="115" y="195">D1</text></g></a>
+<a href="christianity-day2.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#3a4a63" stroke-width="1.6" width="150" x="40" y="256"></rect>
+<text fill="#2a3648" font-size="13" x="115" y="274">基督教</text><text fill="#8a8574" font-size="10" x="115" y="291">D2</text></g></a>
+<a href="catholicism-day3.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#3a4a63" stroke-width="1.6" width="128" x="30" y="352"></rect>
+<text fill="#2a3648" font-size="13" x="94" y="370">天主教</text><text fill="#8a8574" font-size="10" x="94" y="387">D3</text></g></a>
+<a href="orthodoxy-day4.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#3a4a63" stroke-width="1.6" width="128" x="180" y="352"></rect>
+<text fill="#2a3648" font-size="13" x="244" y="370">东正教</text><text fill="#8a8574" font-size="10" x="244" y="387">D4</text></g></a>
+<a href="protestantism-day5.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#3a4a63" stroke-width="1.6" width="128" x="180" y="448"></rect>
+<text fill="#2a3648" font-size="13" x="244" y="466">新教</text><text fill="#8a8574" font-size="10" x="244" y="483">D5</text></g></a>
+<a href="islam-day6.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#3a4a63" stroke-width="1.6" width="140" x="300" y="160"></rect>
+<text fill="#2a3648" font-size="13" x="370" y="178">伊斯兰教</text><text fill="#8a8574" font-size="10" x="370" y="195">D6 · 逊尼/什叶 D7</text></g></a>
+<a href="sufism-day8.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#3a4a63" stroke-width="1.6" width="140" x="300" y="268"></rect>
+<text fill="#2a3648" font-size="13" x="370" y="286">苏菲主义</text><text fill="#8a8574" font-size="10" x="370" y="303">D8</text></g></a>
+<a href="bahai-day18.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#8a5a63" stroke-width="1.6" width="142" x="300" y="448"></rect>
+<text fill="#2a3648" font-size="13" x="371" y="466">巴哈伊信仰</text><text fill="#8a8574" font-size="10" x="371" y="483">D18</text></g></a>
+<!-- 印度 -->
+<g class="node"><rect fill="#f3efe6" height="44" rx="9" stroke="#a89f88" stroke-dasharray="4 3" stroke-width="1.4" width="150" x="600" y="64"></rect>
+<text fill="#5a5750" font-size="13" x="675" y="82">吠陀传统</text><text fill="#8a8574" font-size="10" x="675" y="99">背景源头</text></g>
+<g class="node"><rect fill="#f3efe6" height="44" rx="9" stroke="#a89f88" stroke-dasharray="4 3" stroke-width="1.4" width="140" x="770" y="64"></rect>
+<text fill="#5a5750" font-size="13" x="840" y="82">沙门思潮</text><text fill="#8a8574" font-size="10" x="840" y="99">背景源头</text></g>
+<a href="hinduism-day9.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#a67c3d" stroke-width="1.6" width="150" x="520" y="180"></rect>
+<text fill="#2a3648" font-size="13" x="595" y="198">印度教</text><text fill="#8a8574" font-size="10" x="595" y="215">D9–10</text></g></a>
+<a href="jainism-day11.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#a67c3d" stroke-width="1.6" width="140" x="770" y="180"></rect>
+<text fill="#2a3648" font-size="13" x="840" y="198">耆那教</text><text fill="#8a8574" font-size="10" x="840" y="215">D11</text></g></a>
+<a href="https://cissy0802.github.io/buddhism/"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#7a5c8a" stroke-width="2" width="140" x="770" y="276"></rect>
+<text fill="#2a3648" font-size="13" x="840" y="294">佛教</text><text fill="#7a5c8a" font-size="10" x="840" y="311">→ 佛经站深读</text></g></a>
+<a href="sikhism-day12.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#a67c3d" stroke-width="1.6" width="150" x="520" y="286"></rect>
+<text fill="#2a3648" font-size="13" x="595" y="304">锡克教</text><text fill="#8a8574" font-size="10" x="595" y="321">D12</text></g></a>
+<!-- 东亚 -->
+<a href="daoism-day13.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#5a7a5f" stroke-width="1.6" width="128" x="505" y="450"></rect>
+<text fill="#2a3648" font-size="13" x="569" y="468">道教</text><text fill="#8a8574" font-size="10" x="569" y="485">D13</text></g></a>
+<a href="confucianism-day14.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#5a7a5f" stroke-width="1.6" width="128" x="650" y="450"></rect>
+<text fill="#2a3648" font-size="13" x="714" y="468">儒家</text><text fill="#8a8574" font-size="10" x="714" y="485">D14</text></g></a>
+<a href="folk-religion-day16.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#5a7a5f" stroke-width="1.6" width="152" x="565" y="556"></rect>
+<text fill="#2a3648" font-size="13" x="641" y="574">东亚民间信仰</text><text fill="#8a8574" font-size="10" x="641" y="591">D16</text></g></a>
+<a href="shinto-day15.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#5a7a5f" stroke-width="1.6" width="128" x="790" y="600"></rect>
+<text fill="#2a3648" font-size="13" x="854" y="618">神道教</text><text fill="#8a8574" font-size="10" x="854" y="635">D15</text></g></a>
+<!-- 非洲与离散 -->
+<a href="african-religions-day20.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#8a5a63" stroke-width="1.6" width="150" x="40" y="596"></rect>
+<text fill="#2a3648" font-size="13" x="115" y="614">约鲁巴传统</text><text fill="#8a8574" font-size="10" x="115" y="631">D20</text></g></a>
+<a href="african-religions-day20.html"><g class="node"><rect fill="#fffdf8" height="44" rx="9" stroke="#8a5a63" stroke-width="1.6" width="190" x="250" y="596"></rect>
+<text fill="#2a3648" font-size="13" x="345" y="614">伏都 · 坎东布雷</text><text fill="#8a8574" font-size="10" x="345" y="631">D20</text></g></a>
+</g>
+<!-- ===== 图例 ===== -->
+<g fill="#5a5750" font-size="11.5">
+<rect fill="#efe9db" height="56" rx="10" width="910" x="20" y="726"></rect>
+<line marker-end="url(#arrow)" stroke="#3a4a63" stroke-width="1.8" x1="44" x2="96" y1="754" y2="754"></line>
+<text x="104" y="758">源流 / 衍生</text>
+<line marker-end="url(#arrowd)" stroke="#a67c3d" stroke-dasharray="5 4" stroke-width="1.8" x1="220" x2="272" y1="754" y2="754"></line>
+<text x="280" y="758">思想影响 / 融合</text>
+<line marker-end="url(#arrowd)" marker-start="url(#arrowdS)" stroke="#a67c3d" stroke-dasharray="5 4" stroke-width="1.8" x1="430" x2="482" y1="754" y2="754"></line>
+<text x="490" y="758">互摄 / 习合</text>
+<rect fill="#f3efe6" height="24" rx="6" stroke="#a89f88" stroke-dasharray="4 3" stroke-width="1.2" width="60" x="620" y="742"></rect>
+<text x="690" y="758">背景源头（无独立 Day）</text>
+</g>
 </svg>
 <figcaption>世界主要宗教传统的强关联网络。边框虚线分四大族群；<strong>所有节点可点击</strong>——已发布的直达该期，未发布的 Day 上线后同一链接自动可达（此前暂为 404）；佛教节点链往佛经站。</figcaption>
 </figure>
-
 <section class="card">
-  <span class="tag">读图 · 每条线在说什么</span>
-  <h2>四大族群，三种关系</h2>
-  <ul>
-    <li><strong>亚伯拉罕一脉相承</strong>：基督教从犹太教内部的弥赛亚运动分出（1 世纪）；伊斯兰教承认并重释犹太-基督教的先知谱系（7 世纪）。基督教内部两次大分裂：1054 年东西教会（天主教/东正教），16 世纪宗教改革（新教）。苏菲主义是伊斯兰内部的密契之流；巴哈伊信仰 19 世纪经巴布运动从什叶派环境中诞生、后自立为独立宗教。琐罗亚斯德教对第二圣殿时期犹太教的末世论、天使观有影响——<strong>影响程度学界有争议</strong>，故画虚线。</li>
-    <li><strong>印度双源</strong>：吠陀传统连续演化为印度教；沙门思潮（对吠陀祭祀体系的回应）孕育了耆那教与佛教。此后印度教与佛教在次大陆互摄千年。锡克教 15 世纪在旁遮普兴起，土壤里有印度教虔信（bhakti）运动与苏菲思想——<strong>锡克传统自身强调独立启示</strong>，两条虚线表示语境而非派生。</li>
-    <li><strong>东亚互摄</strong>：佛教约 1 世纪汉传入华，与道教、儒家长期互动，三者共同沉淀为「三教合一」的民间信仰生态；在日本与神道形成「神佛习合」（明治政府 1868 年强制分离前是常态）。</li>
-    <li><strong>离散与融合</strong>：约鲁巴等西非传统随跨大西洋奴隶贸易进入新世界，与殖民地天主教融合，生成伏都（海地）、坎东布雷（巴西）等离散宗教。</li>
-  </ul>
+<span class="tag">读图 · 每条线在说什么</span>
+<h2 data-tts="6a060268e1459751">四大族群，三种关系</h2>
+<ul>
+<li><strong>亚伯拉罕一脉相承</strong>：基督教从犹太教内部的弥赛亚运动分出（1 世纪）；伊斯兰教承认并重释犹太-基督教的先知谱系（7 世纪）。基督教内部两次大分裂：1054 年东西教会（天主教/东正教），16 世纪宗教改革（新教）。苏菲主义是伊斯兰内部的密契之流；巴哈伊信仰 19 世纪经巴布运动从什叶派环境中诞生、后自立为独立宗教。琐罗亚斯德教对第二圣殿时期犹太教的末世论、天使观有影响——<strong>影响程度学界有争议</strong>，故画虚线。</li>
+<li><strong>印度双源</strong>：吠陀传统连续演化为印度教；沙门思潮（对吠陀祭祀体系的回应）孕育了耆那教与佛教。此后印度教与佛教在次大陆互摄千年。锡克教 15 世纪在旁遮普兴起，土壤里有印度教虔信（bhakti）运动与苏菲思想——<strong>锡克传统自身强调独立启示</strong>，两条虚线表示语境而非派生。</li>
+<li><strong>东亚互摄</strong>：佛教约 1 世纪汉传入华，与道教、儒家长期互动，三者共同沉淀为「三教合一」的民间信仰生态；在日本与神道形成「神佛习合」（明治政府 1868 年强制分离前是常态）。</li>
+<li><strong>离散与融合</strong>：约鲁巴等西非传统随跨大西洋奴隶贸易进入新世界，与殖民地天主教融合，生成伏都（海地）、坎东布雷（巴西）等离散宗教。</li>
+</ul>
 </section>
-
 <section class="card">
-  <span class="tag">为什么有的没画</span>
-  <h2>克制的边界</h2>
-  <ul>
-    <li><strong>佛教</strong>出现在图上是因为没有它，印度与东亚的网络无法成立；它的深读不在本站，在<a href="https://cissy0802.github.io/buddhism/" style="color:var(--gold)">佛经站</a>（点击节点直达）。</li>
-    <li><strong>原住民与萨满传统（D19）</strong>不入图：它们是遍布各大洲的多源传统，没有一条可画的单一源流线——硬连反而失真。</li>
-    <li><strong>比较专题（D21–28）</strong>是横切视角，不是节点。</li>
-    <li><strong>「背景源头」（吠陀传统、沙门思潮）没有独立 Day</strong>：它们是孕育期的思想土壤，不是延续至今、有信徒有分布的活传统——四维卡（历史/分布/信仰/信徒原则）套不上。吠陀的演化在 D9 印度教里讲，沙门思潮的故事见 D11 耆那教与下方「关键节点」。</li>
-    <li>只画<strong>学界公认的强关联</strong>；「都讲爱与慈悲」这类表面相似不构成边。图是理解的起点，不是全部——每条线的细节与争议，见对应 Day 的「跨传统对读」。</li>
-  </ul>
+<span class="tag">为什么有的没画</span>
+<h2 data-tts="d7260668df292751">克制的边界</h2>
+<ul>
+<li><strong>佛教</strong>出现在图上是因为没有它，印度与东亚的网络无法成立；它的深读不在本站，在<a href="https://cissy0802.github.io/buddhism/" style="color:var(--gold)">佛经站</a>（点击节点直达）。</li>
+<li><strong>原住民与萨满传统（D19）</strong>不入图：它们是遍布各大洲的多源传统，没有一条可画的单一源流线——硬连反而失真。</li>
+<li><strong>比较专题（D21–28）</strong>是横切视角，不是节点。</li>
+<li><strong>「背景源头」（吠陀传统、沙门思潮）没有独立 Day</strong>：它们是孕育期的思想土壤，不是延续至今、有信徒有分布的活传统——四维卡（历史/分布/信仰/信徒原则）套不上。吠陀的演化在 D9 印度教里讲，沙门思潮的故事见 D11 耆那教与下方「关键节点」。</li>
+<li>只画<strong>学界公认的强关联</strong>；「都讲爱与慈悲」这类表面相似不构成边。图是理解的起点，不是全部——每条线的细节与争议，见对应 Day 的「跨传统对读」。</li>
+</ul>
 </section>
-
 <section class="card">
-  <span class="tag">关键节点 · 图上的分岔与交汇</span>
-  <h2>每个转折点：谁、发生了什么、结果如何</h2>
-  <div class="events">
-    <div class="ev"><h3>弥赛亚运动<small>1世纪</small></h3>
-      <p><b>谁</b>拿撒勒的耶稣与其门徒；保罗把运动带向希腊-罗马世界。</p>
-      <p><b>经过</b>耶稣约公元 30 年被罗马当局处死，门徒宣认他已复活、即是弥赛亚；约 49 年耶路撒冷会议采纳保罗立场——外邦信徒入教无须先受割礼归入犹太教。</p>
-      <p><b>结果</b>运动溢出犹太教边界；70 年圣殿被毁、132–135 年巴尔·科赫巴起义后两教「分道扬镳」，2 世纪基督教已是独立宗教。</p></div>
-    <div class="ev"><h3>逊尼-什叶继承之争<small>632 年起</small></h3>
-      <p><b>谁</b>先知穆罕默德的同伴们；阿布·伯克尔与阿里两条继承线。</p>
-      <p><b>经过</b>632 年穆罕默德归真、未留下无争议的继承安排：多数拥立阿布·伯克尔为哈里发（逊尼叙事），一部分人认为先知已指定堂弟兼女婿阿里（什叶叙事）。680 年阿里之子侯赛因在卡尔巴拉被杀。</p>
-      <p><b>结果</b>政治分歧固化为教派分野——逊尼约 85–90%、什叶约 10–15%（今集中于伊朗、伊拉克等）；卡尔巴拉成为什叶殉难记忆的核心。</p></div>
-    <div class="ev"><h3>东西大分裂<small>1054</small></h3>
-      <p><b>谁</b>教宗良九世的特使洪贝尔枢机 vs 君士坦丁堡牧首米海尔一世。</p>
-      <p><b>经过</b>「和子句」(filioque)、教宗首席权与礼仪差异积怨数百年；1054 年双方在圣索菲亚大教堂互下绝罚。1204 年第四次十字军劫掠君士坦丁堡使裂痕彻底定型。</p>
-      <p><b>结果</b>西方天主教与东方东正教分立至今；1965 年双方互撤绝罚，但共融并未恢复。</p></div>
-    <div class="ev"><h3>宗教改革<small>1517 起</small></h3>
-      <p><b>谁</b>马丁·路德（维滕贝格）、慈运理（苏黎世）、加尔文（日内瓦）等。</p>
-      <p><b>经过</b>1517 年路德发布《九十五条论纲》抨击赎罪券，主张「唯独圣经、因信称义」；印刷术让论战席卷欧洲；英格兰亨利八世另立国教会。</p>
-      <p><b>结果</b>新教众宗派诞生；1555 年《奥格斯堡和约》确立「教随君主」，1648 年《威斯特伐利亚和约》终结宗教战争，欧洲教派版图大体定型。</p></div>
-    <div class="ev"><h3>巴布运动 → 巴哈伊<small>1844–1863</small></h3>
-      <p><b>谁</b>设拉子的赛义德·阿里-穆罕默德（自称「巴布」，意为「门」）；其追随者巴哈欧拉。</p>
-      <p><b>经过</b>1844 年巴布在什叶派伊朗宣示新启示，运动遭镇压、1850 年巴布被处决；1863 年巴哈欧拉宣称自己即巴布所预言「神所要显现的那位」。</p>
-      <p><b>结果</b>巴哈伊自立为独立宗教（非伊斯兰教派），核心教义为诸宗教同源、启示递进；其信徒在伊朗至今受迫害。</p></div>
-    <div class="ev"><h3>沙门思潮<small>约前6–前5世纪</small></h3>
-      <p><b>谁</b>恒河流域的出家修行者群体；大雄（筏驮摩那）与释迦牟尼最具影响。</p>
-      <p><b>经过</b>城市化与列国时代，出家者质疑吠陀祭祀的效力与婆罗门的权威，转向苦行、禅修与解脱之道。</p>
-      <p><b>结果</b>长出耆那教与佛教两大传统；也倒逼吠陀传统内化革新（奥义书的业·轮回·解脱），塑造了后来的印度教。</p></div>
-    <div class="ev"><h3>佛教入华与三教合一<small>1世纪起</small></h3>
-      <p><b>谁</b>丝路商人与译经僧——安世高、鸠摩罗什（401 年抵长安）、玄奘（7 世纪西行）。</p>
-      <p><b>经过</b>佛教约东汉传入（白马寺传说系于公元 68 年）；数百年译经与格义中与道教、儒家竞争又互摄，发展出禅宗、净土等中国化宗派；845 年会昌灭佛是最大挫折。</p>
-      <p><b>结果</b>东亚大乘佛教生态成形；宋以后「三教合一」渐成民间信仰的底色。</p></div>
-    <div class="ev"><h3>神佛习合与明治分离<small>8世纪起 / 1868</small></h3>
-      <p><b>谁</b>日本朝廷与佛教僧团；后来的明治新政府。</p>
-      <p><b>经过</b>自奈良时代起神祇与佛菩萨互相对应（本地垂迹说），神社与寺院一体近千年；1868 年明治政府颁「神佛分离令」，随之出现毁佛浪潮（废佛毁释），并逐步建立国家神道。</p>
-      <p><b>结果</b>制度上神道与佛教分立（国家神道 1945 年解体）；民间实践至今仍常两者并行。</p></div>
-    <div class="ev"><h3>跨大西洋与殖民地融合<small>16–19世纪</small></h3>
-      <p><b>谁</b>被奴隶贸易掳往美洲的西非人——约鲁巴、丰、刚果等族群。</p>
-      <p><b>经过</b>约 1250 万人被运过大西洋；在强制天主教化下，信徒把奥里沙(orisha)等神灵与天主教圣人一一对应，在圣人瞻礼的外壳下延续祖传崇拜。</p>
-      <p><b>结果</b>生成伏都（海地）、坎东布雷（巴西）、桑特里亚（古巴）等离散宗教，至今活跃。</p></div>
-  </div>
-</section>
-
-<p class="backrow">← <a href="index.html">返回传统一览</a></p>
-
-<p class="neutral">本图以中立、比较的立场呈现各传统间的历史关联，力求只画学界公认的强联系；「源流」箭头表示历史演化方向，不含高下评判。存在争议处（琐罗亚斯德教的影响程度、锡克教的独立性表述等）已在文字中注明。</p>
-
+<span class="tag">关键节点 · 图上的分岔与交汇</span>
+<h2 data-tts="69543b37caa16764">每个转折点：谁、发生了什么、结果如何</h2>
+<div class="events">
+<div class="ev"><h3>弥赛亚运动<small>1世纪</small></h3>
+<p><b>谁</b>拿撒勒的耶稣与其门徒；保罗把运动带向希腊-罗马世界。</p>
+<p><b>经过</b>耶稣约公元 30 年被罗马当局处死，门徒宣认他已复活、即是弥赛亚；约 49 年耶路撒冷会议采纳保罗立场——外邦信徒入教无须先受割礼归入犹太教。</p>
+<p><b>结果</b>运动溢出犹太教边界；70 年圣殿被毁、132–135 年巴尔·科赫巴起义后两教「分道扬镳」，2 世纪基督教已是独立宗教。</p></div>
+<div class="ev"><h3>逊尼-什叶继承之争<small>632 年起</small></h3>
+<p><b>谁</b>先知穆罕默德的同伴们；阿布·伯克尔与阿里两条继承线。</p>
+<p><b>经过</b>632 年穆罕默德归真、未留下无争议的继承安排：多数拥立阿布·伯克尔为哈里发（逊尼叙事），一部分人认为先知已指定堂弟兼女婿阿里（什叶叙事）。680 年阿里之子侯赛因在卡尔巴拉被杀。</p>
+<p><b>结果</b>政治分歧固化为教派分野——逊尼约 85–90%、什叶约 10–15%（今集中于伊朗、伊拉克等）；卡尔巴拉成为什叶殉难记忆的核心。</p></div>
+<div class="ev"><h3>东西大分裂<small>1054</small></h3>
+<p><b>谁</b>教宗良九世的特使洪贝尔枢机 vs 君士坦丁堡牧首米海尔一世。</p>
+<p><b>经过</b>「和子句」(filioque)、教宗首席权与礼仪差异积怨数百年；1054 年双方在圣索菲亚大教堂互下绝罚。1204 年第四次十字军劫掠君士坦丁堡使裂痕彻底定型。</p>
+<p><b>结果</b>西方天主教与东方东正教分立至今；1965 年双方互撤绝罚，但共融并未恢复。</p></div>
+<div class="ev"><h3>宗教改革<small>1517 起</small></h3>
+<p><b>谁</b>马丁·路德（维滕贝格）、慈运理（苏黎世）、加尔文（日内瓦）等。</p>
+<p><b>经过</b>1517 年路德发布《九十五条论纲》抨击赎罪券，主张「唯独圣经、因信称义」；印刷术让论战席卷欧洲；英格兰亨利八世另立国教会。</p>
+<p><b>结果</b>新教众宗派诞生；1555 年《奥格斯堡和约》确立「教随君主」，1648 年《威斯特伐利亚和约》终结宗教战争，欧洲教派版图大体定型。</p></div>
+<div class="ev"><h3>巴布运动 → 巴哈伊<small>1844–1863</small></h3>
+<p><b>谁</b>设拉子的赛义德·阿里-穆罕默德（自称「巴布」，意为「门」）；其追随者巴哈欧拉。</p>
+<p><b>经过</b>1844 年巴布在什叶派伊朗宣示新启示，运动遭镇压、1850 年巴布被处决；1863 年巴哈欧拉宣称自己即巴布所预言「神所要显现的那位」。</p>
+<p><b>结果</b>巴哈伊自立为独立宗教（非伊斯兰教派），核心教义为诸宗教同源、启示递进；其信徒在伊朗至今受迫害。</p></div>
+<div class="ev"><h3>沙门思潮<small>约前6–前5世纪</small></h3>
+<p><b>谁</b>恒河流域的出家修行者群体；大雄（筏驮摩那）与释迦牟尼最具影响。</p>
+<p><b>经过</b>城市化与列国时代，出家者质疑吠陀祭祀的效力与婆罗门的权威，转向苦行、禅修与解脱之道。</p>
+<p><b>结果</b>长出耆那教与佛教两大传统；也倒逼吠陀传统内化革新（奥义书的业·轮回·解脱），塑造了后来的印度教。</p></div>
+<div class="ev"><h3>佛教入华与三教合一<small>1世纪起</small></h3>
+<p><b>谁</b>丝路商人与译经僧——安世高、鸠摩罗什（401 年抵长安）、玄奘（7 世纪西行）。</p>
+<p><b>经过</b>佛教约东汉传入（白马寺传说系于公元 68 年）；数百年译经与格义中与道教、儒家竞争又互摄，发展出禅宗、净土等中国化宗派；845 年会昌灭佛是最大挫折。</p>
+<p><b>结果</b>东亚大乘佛教生态成形；宋以后「三教合一」渐成民间信仰的底色。</p></div>
+<div class="ev"><h3>神佛习合与明治分离<small>8世纪起 / 1868</small></h3>
+<p><b>谁</b>日本朝廷与佛教僧团；后来的明治新政府。</p>
+<p><b>经过</b>自奈良时代起神祇与佛菩萨互相对应（本地垂迹说），神社与寺院一体近千年；1868 年明治政府颁「神佛分离令」，随之出现毁佛浪潮（废佛毁释），并逐步建立国家神道。</p>
+<p><b>结果</b>制度上神道与佛教分立（国家神道 1945 年解体）；民间实践至今仍常两者并行。</p></div>
+<div class="ev"><h3>跨大西洋与殖民地融合<small>16–19世纪</small></h3>
+<p><b>谁</b>被奴隶贸易掳往美洲的西非人——约鲁巴、丰、刚果等族群。</p>
+<p><b>经过</b>约 1250 万人被运过大西洋；在强制天主教化下，信徒把奥里沙(orisha)等神灵与天主教圣人一一对应，在圣人瞻礼的外壳下延续祖传崇拜。</p>
+<p><b>结果</b>生成伏都（海地）、坎东布雷（巴西）、桑特里亚（古巴）等离散宗教，至今活跃。</p></div>
 </div>
-<script src="https://hub.cissychen.com/comments.js" defer></script>
-<script src="https://hub.cissychen.com/search.js" defer></script>
-<script src="https://hub.cissychen.com/index-button.js" defer></script>
-<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</section>
+<p class="backrow">← <a href="index.html">返回传统一览</a></p>
+<p class="neutral">本图以中立、比较的立场呈现各传统间的历史关联，力求只画学界公认的强联系；「源流」箭头表示历史演化方向，不含高下评判。存在争议处（琐罗亚斯德教的影响程度、锡克教的独立性表述等）已在文字中注明。</p>
+</div>
+<script defer="" src="https://hub.cissychen.com/comments.js"></script>
+<script defer="" src="https://hub.cissychen.com/search.js"></script>
+<script defer="" src="https://hub.cissychen.com/index-button.js"></script>
+<script defer="" src="https://hub.cissychen.com/i18n-tts.js"></script>
 </body>
 </html>
