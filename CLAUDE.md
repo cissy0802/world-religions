@@ -41,3 +41,17 @@ TOPICS.md 是本仓选题的**唯一真相源**。以下三条每次运行都适
 ```
 
 这样 CI 的 inject-comments 不会再对新页面追加自动提交。
+
+## 文件名 slug 已预定（关系网 relations.html 预链，必须照用）
+
+`relations.html` / `relations.en.html` 是手工策展的关系图页（**你不要修改它们**），其节点已预链到未发布 Day 的文件名。**生成 Day N 时文件名必须严格用下表 slug**（否则关系图链接永久 404）：
+
+- Day 8: `sufism-day8.html` · Day 9: `hinduism-day9.html` · Day 10: `hindu-life-day10.html`
+- Day 11: `jainism-day11.html` · Day 12: `sikhism-day12.html` · Day 13: `daoism-day13.html`
+- Day 14: `confucianism-day14.html` · Day 15: `shinto-day15.html` · Day 16: `folk-religion-day16.html`
+- Day 17: `zoroastrianism-day17.html` · Day 18: `bahai-day18.html` · Day 19: `indigenous-shamanic-day19.html`
+- Day 20: `african-religions-day20.html` · Day 21: `divine-spectrum-day21.html` · Day 22: `mysticism-day22.html`
+- Day 23: `scripture-day23.html` · Day 24: `religion-violence-day24.html` · Day 25: `secularization-day25.html`
+- Day 26: `new-religions-day26.html` · Day 27: `science-religion-day27.html` · Day 28: `nonreligious-day28.html`
+
+（英文页同名加 `.en`。若日后 TOPICS 追加 Day 29+，slug 自定即可——关系图没有预链它们。）
