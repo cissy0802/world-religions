@@ -4,49 +4,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>World Religions · The Relationship Map</title>
+<meta content="#22102a" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
   :root{
-    --bg:#f6f3ec; --ink:#2b2b2b; --soft:#5a5750;
-    --slate:#3a4a63; --slate-d:#2a3648; --gold:#a67c3d; --gold-l:#c49a54;
-    --line:#e3dccd; --card:#fffdf8; --shade:#efe9db;
-    --green:#5a7a5f; --maroon:#8a5a63; --lotus:#7a5c8a;
+    --bg:#221f18; --ink:#c6c6c6; --soft:#aba8a1;
+    --slate:#96a6bf; --slate-d:#acb8ca; --gold:#c49a5b; --gold-l:#b28842;
+    --line:#423b2c; --card:#13110c; --shade:#342e20;
+    --green:#85a58a; --maroon:#a77780; --lotus:#9577a5;
   }
   *{box-sizing:border-box}
-  body{margin:0; background:var(--bg); color:var(--ink);
+  body{margin:0; background:#22102a; color:#c6c6c6;
     font-family:Georgia,"Noto Serif SC",serif; line-height:1.85; overflow-wrap:break-word}
   .wrap{max-width:980px; margin:0 auto; padding:44px 22px 80px}
   header.top{border-bottom:2px solid var(--slate); padding-bottom:22px; margin-bottom:8px}
-  .kicker{font-size:.82rem; letter-spacing:.22em; color:var(--gold); text-transform:uppercase; margin-bottom:12px}
-  h1{font-size:2.15rem; margin:.1em 0 .3em; color:var(--slate-d)}
-  .meta{font-size:.9rem; color:var(--soft)}
+  .kicker{font-size:.82rem; letter-spacing:.22em; color:#c49a5b; text-transform:uppercase; margin-bottom:12px}
+  h1{font-size:2.15rem; margin:.1em 0 .3em; color:#acb8ca}
+  .meta{font-size:.9rem; color:#aba8a1}
   .meta span{margin-right:14px}
-  .lede{font-size:1.05rem; color:var(--slate-d); background:var(--shade);
+  .lede{font-size:1.05rem; color:#acb8ca; background:#2f1d36;
     border-left:4px solid var(--gold); padding:16px 20px; margin:26px 0; border-radius:0 6px 6px 0}
-  figure.graph{margin:30px 0; background:var(--card); border:1px solid var(--line);
+  figure.graph{margin:30px 0; background:#130818; border:1px solid var(--line);
     border-radius:12px; padding:18px 10px 8px; overflow-x:auto}
   figure.graph svg{max-width:100%; height:auto; min-width:640px; display:block; margin:0 auto}
-  figcaption{font-size:.82rem; color:var(--soft); margin:10px 12px 8px; text-align:center}
+  figcaption{font-size:.82rem; color:#aba8a1; margin:10px 12px 8px; text-align:center}
   .node rect{transition:stroke-width .15s}
   .node:hover rect{stroke-width:3}
   a .node rect{cursor:pointer}
-  section.card{background:var(--card); border:1px solid var(--line); border-radius:10px;
+  section.card{background:#130818; border:1px solid var(--line); border-radius:10px;
     padding:24px 28px; margin:24px 0}
   .tag{display:inline-block; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase;
-    color:#fff; background:var(--slate); padding:4px 11px; border-radius:20px; margin-bottom:10px}
-  h2{font-size:1.25rem; color:var(--slate-d); margin:.2em 0 .5em}
+    color:#ffffff; background:#3a4a63; padding:4px 11px; border-radius:20px; margin-bottom:10px}
+  h2{font-size:1.25rem; color:#acb8ca; margin:.2em 0 .5em}
   p{margin:.7em 0}
-  strong{color:var(--slate-d)}
+  strong{color:#acb8ca}
   ul{margin:.6em 0; padding-left:1.3em}
   li{margin:.45em 0}
-  .neutral{font-size:.82rem; color:var(--soft); border-top:1px solid var(--line); margin-top:40px; padding-top:16px; font-style:italic}
+  .neutral{font-size:.82rem; color:#aba8a1; border-top:1px solid var(--line); margin-top:40px; padding-top:16px; font-style:italic}
   .backrow{margin:20px 0 0; font-size:.9rem}
-  .backrow a{color:var(--gold); text-decoration:none}
+  .backrow a{color:#c49a5b; text-decoration:none}
   .events{display:grid; grid-template-columns:repeat(auto-fill,minmax(420px,1fr)); gap:14px; margin-top:8px}
-  .ev{background:var(--shade); border-radius:8px; padding:14px 18px}
-  .ev h3{margin:.1em 0 .45em; color:var(--slate-d); font-size:1.02rem}
-  .ev h3 small{color:var(--gold); font-weight:normal; margin-left:8px; font-size:.8rem}
-  .ev p{margin:.35em 0; font-size:.88rem; line-height:1.75; color:var(--soft)}
-  .ev b{color:var(--slate-d); margin-right:6px}
+  .ev{background:#2f1d36; border-radius:8px; padding:14px 18px}
+  .ev h3{margin:.1em 0 .45em; color:#acb8ca; font-size:1.02rem}
+  .ev h3 small{color:#c49a5b; font-weight:normal; margin-left:8px; font-size:.8rem}
+  .ev p{margin:.35em 0; font-size:.88rem; line-height:1.75; color:#aba8a1}
+  .ev b{color:#acb8ca; margin-right:6px}
 </style>
 </head>
 <body>
@@ -64,71 +68,71 @@
 <svg viewBox="0 0 940 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Relationship network of world religions">
   <defs>
     <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-      <path d="M0,0 L10,4 L0,8 z" fill="#3a4a63"/>
+      <path d="M0,0 L10,4 L0,8 z" fill="#96a6bf"/>
     </marker>
     <marker id="arrowd" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-      <path d="M0,0 L10,4 L0,8 z" fill="#a67c3d"/>
+      <path d="M0,0 L10,4 L0,8 z" fill="#c49a5b"/>
     </marker>
     <marker id="arrowdS" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="1" refY="4" orient="auto">
-      <path d="M10,0 L0,4 L10,8 z" fill="#a67c3d"/>
+      <path d="M10,0 L0,4 L10,8 z" fill="#c49a5b"/>
     </marker>
   </defs>
 
   
-  <rect x="20" y="30" width="440" height="494" rx="14" fill="none" stroke="#d8cdb0" stroke-dasharray="6 5"/>
-  <text x="36" y="52" font-size="12" fill="#8a8574" letter-spacing="2">ABRAHAMIC · FROM WEST ASIA</text>
-  <rect x="490" y="30" width="440" height="340" rx="14" fill="none" stroke="#d8cdb0" stroke-dasharray="6 5"/>
-  <text x="506" y="52" font-size="12" fill="#8a8574" letter-spacing="2">DHARMIC · FROM SOUTH ASIA</text>
-  <rect x="490" y="410" width="440" height="270" rx="14" fill="none" stroke="#d8cdb0" stroke-dasharray="6 5"/>
-  <text x="506" y="432" font-size="12" fill="#8a8574" letter-spacing="2">EAST ASIAN</text>
-  <rect x="20" y="556" width="440" height="150" rx="14" fill="none" stroke="#d8cdb0" stroke-dasharray="6 5"/>
-  <text x="36" y="578" font-size="12" fill="#8a8574" letter-spacing="2">AFRICAN &amp; DIASPORA · W. AFRICA → AMERICAS</text>
+  <rect x="20" y="30" width="440" height="494" rx="14" fill="none" stroke="#5d5235" stroke-dasharray="6 5"/>
+  <text x="36" y="52" font-size="12" fill="#8f8a79" letter-spacing="2">ABRAHAMIC · FROM WEST ASIA</text>
+  <rect x="490" y="30" width="440" height="340" rx="14" fill="none" stroke="#5d5235" stroke-dasharray="6 5"/>
+  <text x="506" y="52" font-size="12" fill="#8f8a79" letter-spacing="2">DHARMIC · FROM SOUTH ASIA</text>
+  <rect x="490" y="410" width="440" height="270" rx="14" fill="none" stroke="#5d5235" stroke-dasharray="6 5"/>
+  <text x="506" y="432" font-size="12" fill="#8f8a79" letter-spacing="2">EAST ASIAN</text>
+  <rect x="20" y="556" width="440" height="150" rx="14" fill="none" stroke="#5d5235" stroke-dasharray="6 5"/>
+  <text x="36" y="578" font-size="12" fill="#8f8a79" letter-spacing="2">AFRICAN &amp; DIASPORA · W. AFRICA → AMERICAS</text>
 
   
   <g stroke-width="1.8" fill="none">
     
-    <line x1="115" y1="108" x2="115" y2="158" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
+    <line x1="115" y1="108" x2="115" y2="158" stroke="#c49a5b" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
     
-    <line x1="115" y1="204" x2="115" y2="254" stroke="#3a4a63" marker-end="url(#arrow)"/>
+    <line x1="115" y1="204" x2="115" y2="254" stroke="#96a6bf" marker-end="url(#arrow)"/>
     
-    <line x1="80" y1="300" x2="80" y2="350" stroke="#3a4a63" marker-end="url(#arrow)"/>
-    <line x1="150" y1="300" x2="232" y2="350" stroke="#3a4a63" marker-end="url(#arrow)"/>
+    <line x1="80" y1="300" x2="80" y2="350" stroke="#96a6bf" marker-end="url(#arrow)"/>
+    <line x1="150" y1="300" x2="232" y2="350" stroke="#96a6bf" marker-end="url(#arrow)"/>
     
-    <line x1="120" y1="396" x2="200" y2="446" stroke="#3a4a63" marker-end="url(#arrow)"/>
+    <line x1="120" y1="396" x2="200" y2="446" stroke="#96a6bf" marker-end="url(#arrow)"/>
     
-    <line x1="190" y1="175" x2="298" y2="175" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
-    <line x1="190" y1="262" x2="298" y2="198" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
+    <line x1="190" y1="175" x2="298" y2="175" stroke="#c49a5b" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
+    <line x1="190" y1="262" x2="298" y2="198" stroke="#c49a5b" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
     
-    <line x1="370" y1="204" x2="370" y2="266" stroke="#3a4a63" marker-end="url(#arrow)"/>
+    <line x1="370" y1="204" x2="370" y2="266" stroke="#96a6bf" marker-end="url(#arrow)"/>
     
-    <path d="M440,182 L458,182 L458,470 L442,470" stroke="#3a4a63" marker-end="url(#arrow)"/>
+    <path d="M440,182 L458,182 L458,470 L442,470" stroke="#96a6bf" marker-end="url(#arrow)"/>
     
-    <line x1="440" y1="290" x2="518" y2="296" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
+    <line x1="440" y1="290" x2="518" y2="296" stroke="#c49a5b" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
     
-    <line x1="655" y1="108" x2="613" y2="178" stroke="#3a4a63" marker-end="url(#arrow)"/>
-    <line x1="750" y1="86" x2="768" y2="86" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
+    <line x1="655" y1="108" x2="613" y2="178" stroke="#96a6bf" marker-end="url(#arrow)"/>
+    <line x1="750" y1="86" x2="768" y2="86" stroke="#c49a5b" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
     
-    <line x1="845" y1="108" x2="845" y2="178" stroke="#3a4a63" marker-end="url(#arrow)"/>
-    <path d="M912,100 L922,100 L922,296 L912,296" stroke="#3a4a63" marker-end="url(#arrow)"/>
+    <line x1="845" y1="108" x2="845" y2="178" stroke="#96a6bf" marker-end="url(#arrow)"/>
+    <path d="M912,100 L922,100 L922,296 L912,296" stroke="#96a6bf" marker-end="url(#arrow)"/>
     
-    <line x1="595" y1="224" x2="595" y2="284" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
+    <line x1="595" y1="224" x2="595" y2="284" stroke="#c49a5b" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
     
-    <line x1="678" y1="232" x2="766" y2="290" stroke="#a67c3d" stroke-dasharray="5 4" marker-start="url(#arrowdS)" marker-end="url(#arrowd)"/>
+    <line x1="678" y1="232" x2="766" y2="290" stroke="#c49a5b" stroke-dasharray="5 4" marker-start="url(#arrowdS)" marker-end="url(#arrowd)"/>
     
-    <path d="M800,320 L800,578 L717,578" stroke="#3a4a63" marker-end="url(#arrow)"/>
+    <path d="M800,320 L800,578 L717,578" stroke="#96a6bf" marker-end="url(#arrow)"/>
     
-    <line x1="860" y1="320" x2="860" y2="598" stroke="#a67c3d" stroke-dasharray="5 4" marker-start="url(#arrowdS)" marker-end="url(#arrowd)"/>
+    <line x1="860" y1="320" x2="860" y2="598" stroke="#c49a5b" stroke-dasharray="5 4" marker-start="url(#arrowdS)" marker-end="url(#arrowd)"/>
     
-    <line x1="569" y1="494" x2="612" y2="554" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
-    <line x1="714" y1="494" x2="672" y2="554" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
+    <line x1="569" y1="494" x2="612" y2="554" stroke="#c49a5b" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
+    <line x1="714" y1="494" x2="672" y2="554" stroke="#c49a5b" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
     
-    <line x1="190" y1="618" x2="248" y2="618" stroke="#3a4a63" marker-end="url(#arrow)"/>
+    <line x1="190" y1="618" x2="248" y2="618" stroke="#96a6bf" marker-end="url(#arrow)"/>
     
-    <path d="M80,396 C80,510 190,565 246,606" stroke="#a67c3d" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
+    <path d="M80,396 C80,510 190,565 246,606" stroke="#c49a5b" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
   </g>
 
   
-  <g font-size="10.5" fill="#8a8574">
+  <g font-size="10.5" fill="#66546e">
     <text x="124" y="136">eschatology · angelology</text>
     <text x="124" y="232">1st c. · messianic movement</text>
     <text x="198" y="341" text-anchor="end">Great Schism 1054</text>
@@ -150,63 +154,63 @@
   
   <g font-family="Georgia,'Noto Serif SC',serif" text-anchor="middle">
     
-    <a href="zoroastrianism-day17.en.html"><g class="node"><rect x="40" y="64" width="150" height="44" rx="9" fill="#fffdf8" stroke="#8a5a63" stroke-width="1.6"/>
-      <text x="115" y="82" font-size="13" fill="#2a3648">Zoroastrianism</text><text x="115" y="99" font-size="10" fill="#8a8574">D17 · Iran → Parsi India</text></g></a>
-    <a href="judaism-day1.en.html"><g class="node"><rect x="40" y="160" width="150" height="44" rx="9" fill="#fffdf8" stroke="#3a4a63" stroke-width="1.6"/>
-      <text x="115" y="178" font-size="13" fill="#2a3648">Judaism</text><text x="115" y="195" font-size="10" fill="#8a8574">D1 · Israel/N. America</text></g></a>
-    <a href="christianity-day2.en.html"><g class="node"><rect x="40" y="256" width="150" height="44" rx="9" fill="#fffdf8" stroke="#3a4a63" stroke-width="1.6"/>
-      <text x="115" y="274" font-size="13" fill="#2a3648">Christianity</text><text x="115" y="291" font-size="10" fill="#8a8574">D2 · global, shifting south</text></g></a>
-    <a href="catholicism-day3.en.html"><g class="node"><rect x="30" y="352" width="128" height="44" rx="9" fill="#fffdf8" stroke="#3a4a63" stroke-width="1.6"/>
-      <text x="94" y="370" font-size="13" fill="#2a3648">Catholicism</text><text x="94" y="387" font-size="10" fill="#8a8574">D3 · LatAm/Europe/Africa</text></g></a>
-    <a href="orthodoxy-day4.en.html"><g class="node"><rect x="180" y="352" width="128" height="44" rx="9" fill="#fffdf8" stroke="#3a4a63" stroke-width="1.6"/>
-      <text x="244" y="370" font-size="13" fill="#2a3648">Orthodoxy</text><text x="244" y="387" font-size="10" fill="#8a8574">D4 · Russia/E. Europe</text></g></a>
-    <a href="protestantism-day5.en.html"><g class="node"><rect x="168" y="448" width="126" height="44" rx="9" fill="#fffdf8" stroke="#3a4a63" stroke-width="1.6"/>
-      <text x="231" y="466" font-size="13" fill="#2a3648">Protestantism</text><text x="231" y="483" font-size="10" fill="#8a8574">D5 · Americas/N. Europe</text></g></a>
-    <a href="islam-day6.en.html"><g class="node"><rect x="300" y="160" width="140" height="44" rx="9" fill="#fffdf8" stroke="#3a4a63" stroke-width="1.6"/>
-      <text x="370" y="178" font-size="13" fill="#2a3648">Islam</text><text x="370" y="195" font-size="10" fill="#8a8574">D6–7 · Indonesia/S.Asia/ME</text></g></a>
-    <a href="sufism-day8.en.html"><g class="node"><rect x="300" y="268" width="140" height="44" rx="9" fill="#fffdf8" stroke="#3a4a63" stroke-width="1.6"/>
-      <text x="370" y="286" font-size="13" fill="#2a3648">Sufism</text><text x="370" y="303" font-size="10" fill="#8a8574">D8 · the Muslim world</text></g></a>
-    <a href="bahai-day18.en.html"><g class="node"><rect x="306" y="448" width="136" height="44" rx="9" fill="#fffdf8" stroke="#8a5a63" stroke-width="1.6"/>
-      <text x="374" y="466" font-size="13" fill="#2a3648">Baha'i Faith</text><text x="374" y="483" font-size="10" fill="#8a8574">D18 · globally scattered</text></g></a>
+    <a href="zoroastrianism-day17.en.html"><g class="node"><rect x="40" y="64" width="150" height="44" rx="9" fill="#130818" stroke="#a77780" stroke-width="1.6"/>
+      <text x="115" y="82" font-size="13" fill="#acb8ca">Zoroastrianism</text><text x="115" y="99" font-size="10" fill="#8f8a79">D17 · Iran → Parsi India</text></g></a>
+    <a href="judaism-day1.en.html"><g class="node"><rect x="40" y="160" width="150" height="44" rx="9" fill="#130818" stroke="#96a6bf" stroke-width="1.6"/>
+      <text x="115" y="178" font-size="13" fill="#acb8ca">Judaism</text><text x="115" y="195" font-size="10" fill="#8f8a79">D1 · Israel/N. America</text></g></a>
+    <a href="christianity-day2.en.html"><g class="node"><rect x="40" y="256" width="150" height="44" rx="9" fill="#130818" stroke="#96a6bf" stroke-width="1.6"/>
+      <text x="115" y="274" font-size="13" fill="#acb8ca">Christianity</text><text x="115" y="291" font-size="10" fill="#8f8a79">D2 · global, shifting south</text></g></a>
+    <a href="catholicism-day3.en.html"><g class="node"><rect x="30" y="352" width="128" height="44" rx="9" fill="#130818" stroke="#96a6bf" stroke-width="1.6"/>
+      <text x="94" y="370" font-size="13" fill="#acb8ca">Catholicism</text><text x="94" y="387" font-size="10" fill="#8f8a79">D3 · LatAm/Europe/Africa</text></g></a>
+    <a href="orthodoxy-day4.en.html"><g class="node"><rect x="180" y="352" width="128" height="44" rx="9" fill="#130818" stroke="#96a6bf" stroke-width="1.6"/>
+      <text x="244" y="370" font-size="13" fill="#acb8ca">Orthodoxy</text><text x="244" y="387" font-size="10" fill="#8f8a79">D4 · Russia/E. Europe</text></g></a>
+    <a href="protestantism-day5.en.html"><g class="node"><rect x="168" y="448" width="126" height="44" rx="9" fill="#130818" stroke="#96a6bf" stroke-width="1.6"/>
+      <text x="231" y="466" font-size="13" fill="#acb8ca">Protestantism</text><text x="231" y="483" font-size="10" fill="#8f8a79">D5 · Americas/N. Europe</text></g></a>
+    <a href="islam-day6.en.html"><g class="node"><rect x="300" y="160" width="140" height="44" rx="9" fill="#130818" stroke="#96a6bf" stroke-width="1.6"/>
+      <text x="370" y="178" font-size="13" fill="#acb8ca">Islam</text><text x="370" y="195" font-size="10" fill="#8f8a79">D6–7 · Indonesia/S.Asia/ME</text></g></a>
+    <a href="sufism-day8.en.html"><g class="node"><rect x="300" y="268" width="140" height="44" rx="9" fill="#130818" stroke="#96a6bf" stroke-width="1.6"/>
+      <text x="370" y="286" font-size="13" fill="#acb8ca">Sufism</text><text x="370" y="303" font-size="10" fill="#8f8a79">D8 · the Muslim world</text></g></a>
+    <a href="bahai-day18.en.html"><g class="node"><rect x="306" y="448" width="136" height="44" rx="9" fill="#130818" stroke="#a77780" stroke-width="1.6"/>
+      <text x="374" y="466" font-size="13" fill="#acb8ca">Baha'i Faith</text><text x="374" y="483" font-size="10" fill="#8f8a79">D18 · globally scattered</text></g></a>
     
-    <g class="node"><rect x="600" y="64" width="150" height="44" rx="9" fill="#f3efe6" stroke="#a89f88" stroke-width="1.4" stroke-dasharray="4 3"/>
-      <text x="675" y="82" font-size="13" fill="#5a5750">Vedic tradition</text><text x="675" y="99" font-size="10" fill="#8a8574">background source</text></g>
-    <g class="node"><rect x="770" y="64" width="140" height="44" rx="9" fill="#f3efe6" stroke="#a89f88" stroke-width="1.4" stroke-dasharray="4 3"/>
-      <text x="840" y="82" font-size="13" fill="#5a5750">Śramaṇa movement</text><text x="840" y="99" font-size="10" fill="#8a8574">background source</text></g>
-    <a href="hinduism-day9.en.html"><g class="node"><rect x="520" y="180" width="150" height="44" rx="9" fill="#fffdf8" stroke="#a67c3d" stroke-width="1.6"/>
-      <text x="595" y="198" font-size="13" fill="#2a3648">Hinduism</text><text x="595" y="215" font-size="10" fill="#8a8574">D9–10 · India/Nepal</text></g></a>
-    <a href="jainism-day11.en.html"><g class="node"><rect x="770" y="180" width="140" height="44" rx="9" fill="#fffdf8" stroke="#a67c3d" stroke-width="1.6"/>
-      <text x="840" y="198" font-size="13" fill="#2a3648">Jainism</text><text x="840" y="215" font-size="10" fill="#8a8574">D11 · western India</text></g></a>
-    <a href="https://cissy0802.github.io/buddhism/"><g class="node"><rect x="770" y="276" width="140" height="44" rx="9" fill="#fffdf8" stroke="#7a5c8a" stroke-width="2"/>
-      <text x="840" y="294" font-size="13" fill="#2a3648">Buddhism</text><text x="840" y="311" font-size="10" fill="#7a5c8a">→ Buddhism site</text></g></a>
-    <a href="sikhism-day12.en.html"><g class="node"><rect x="520" y="286" width="150" height="44" rx="9" fill="#fffdf8" stroke="#a67c3d" stroke-width="1.6"/>
-      <text x="595" y="304" font-size="13" fill="#2a3648">Sikhism</text><text x="595" y="321" font-size="10" fill="#8a8574">D12 · Punjab &amp; diaspora</text></g></a>
+    <g class="node"><rect x="600" y="64" width="150" height="44" rx="9" fill="#27152f" stroke="#807760" stroke-width="1.4" stroke-dasharray="4 3"/>
+      <text x="675" y="82" font-size="13" fill="#aba8a1">Vedic tradition</text><text x="675" y="99" font-size="10" fill="#8f8a79">background source</text></g>
+    <g class="node"><rect x="770" y="64" width="140" height="44" rx="9" fill="#27152f" stroke="#807760" stroke-width="1.4" stroke-dasharray="4 3"/>
+      <text x="840" y="82" font-size="13" fill="#aba8a1">Śramaṇa movement</text><text x="840" y="99" font-size="10" fill="#8f8a79">background source</text></g>
+    <a href="hinduism-day9.en.html"><g class="node"><rect x="520" y="180" width="150" height="44" rx="9" fill="#130818" stroke="#c49a5b" stroke-width="1.6"/>
+      <text x="595" y="198" font-size="13" fill="#acb8ca">Hinduism</text><text x="595" y="215" font-size="10" fill="#8f8a79">D9–10 · India/Nepal</text></g></a>
+    <a href="jainism-day11.en.html"><g class="node"><rect x="770" y="180" width="140" height="44" rx="9" fill="#130818" stroke="#c49a5b" stroke-width="1.6"/>
+      <text x="840" y="198" font-size="13" fill="#acb8ca">Jainism</text><text x="840" y="215" font-size="10" fill="#8f8a79">D11 · western India</text></g></a>
+    <a href="https://cissy0802.github.io/buddhism/"><g class="node"><rect x="770" y="276" width="140" height="44" rx="9" fill="#130818" stroke="#9577a5" stroke-width="2"/>
+      <text x="840" y="294" font-size="13" fill="#acb8ca">Buddhism</text><text x="840" y="311" font-size="10" fill="#9577a5">→ Buddhism site</text></g></a>
+    <a href="sikhism-day12.en.html"><g class="node"><rect x="520" y="286" width="150" height="44" rx="9" fill="#130818" stroke="#c49a5b" stroke-width="1.6"/>
+      <text x="595" y="304" font-size="13" fill="#acb8ca">Sikhism</text><text x="595" y="321" font-size="10" fill="#8f8a79">D12 · Punjab &amp; diaspora</text></g></a>
     
-    <a href="daoism-day13.en.html"><g class="node"><rect x="505" y="450" width="128" height="44" rx="9" fill="#fffdf8" stroke="#5a7a5f" stroke-width="1.6"/>
-      <text x="569" y="468" font-size="13" fill="#2a3648">Daoism</text><text x="569" y="485" font-size="10" fill="#8a8574">D13 · Chinese world</text></g></a>
-    <a href="confucianism-day14.en.html"><g class="node"><rect x="650" y="450" width="128" height="44" rx="9" fill="#fffdf8" stroke="#5a7a5f" stroke-width="1.6"/>
-      <text x="714" y="468" font-size="13" fill="#2a3648">Confucianism</text><text x="714" y="485" font-size="10" fill="#8a8574">D14 · East Asian sphere</text></g></a>
-    <a href="folk-religion-day16.en.html"><g class="node"><rect x="565" y="556" width="152" height="44" rx="9" fill="#fffdf8" stroke="#5a7a5f" stroke-width="1.6"/>
-      <text x="641" y="574" font-size="13" fill="#2a3648">East Asian folk religion</text><text x="641" y="591" font-size="10" fill="#8a8574">D16 · Chinese world/SE Asia</text></g></a>
-    <a href="shinto-day15.en.html"><g class="node"><rect x="790" y="600" width="128" height="44" rx="9" fill="#fffdf8" stroke="#5a7a5f" stroke-width="1.6"/>
-      <text x="854" y="618" font-size="13" fill="#2a3648">Shinto</text><text x="854" y="635" font-size="10" fill="#8a8574">D15 · Japan</text></g></a>
+    <a href="daoism-day13.en.html"><g class="node"><rect x="505" y="450" width="128" height="44" rx="9" fill="#130818" stroke="#85a58a" stroke-width="1.6"/>
+      <text x="569" y="468" font-size="13" fill="#acb8ca">Daoism</text><text x="569" y="485" font-size="10" fill="#8f8a79">D13 · Chinese world</text></g></a>
+    <a href="confucianism-day14.en.html"><g class="node"><rect x="650" y="450" width="128" height="44" rx="9" fill="#130818" stroke="#85a58a" stroke-width="1.6"/>
+      <text x="714" y="468" font-size="13" fill="#acb8ca">Confucianism</text><text x="714" y="485" font-size="10" fill="#8f8a79">D14 · East Asian sphere</text></g></a>
+    <a href="folk-religion-day16.en.html"><g class="node"><rect x="565" y="556" width="152" height="44" rx="9" fill="#130818" stroke="#85a58a" stroke-width="1.6"/>
+      <text x="641" y="574" font-size="13" fill="#acb8ca">East Asian folk religion</text><text x="641" y="591" font-size="10" fill="#8f8a79">D16 · Chinese world/SE Asia</text></g></a>
+    <a href="shinto-day15.en.html"><g class="node"><rect x="790" y="600" width="128" height="44" rx="9" fill="#130818" stroke="#85a58a" stroke-width="1.6"/>
+      <text x="854" y="618" font-size="13" fill="#acb8ca">Shinto</text><text x="854" y="635" font-size="10" fill="#8f8a79">D15 · Japan</text></g></a>
     
-    <a href="african-religions-day20.en.html"><g class="node"><rect x="40" y="596" width="150" height="44" rx="9" fill="#fffdf8" stroke="#8a5a63" stroke-width="1.6"/>
-      <text x="115" y="614" font-size="13" fill="#2a3648">Yoruba tradition</text><text x="115" y="631" font-size="10" fill="#8a8574">D20 · West Africa (Nigeria)</text></g></a>
-    <a href="african-religions-day20.en.html"><g class="node"><rect x="250" y="596" width="190" height="44" rx="9" fill="#fffdf8" stroke="#8a5a63" stroke-width="1.6"/>
-      <text x="345" y="614" font-size="13" fill="#2a3648">Vodou · Candomblé</text><text x="345" y="631" font-size="10" fill="#8a8574">D20 · Haiti/Brazil/Cuba</text></g></a>
+    <a href="african-religions-day20.en.html"><g class="node"><rect x="40" y="596" width="150" height="44" rx="9" fill="#130818" stroke="#a77780" stroke-width="1.6"/>
+      <text x="115" y="614" font-size="13" fill="#acb8ca">Yoruba tradition</text><text x="115" y="631" font-size="10" fill="#8f8a79">D20 · West Africa (Nigeria)</text></g></a>
+    <a href="african-religions-day20.en.html"><g class="node"><rect x="250" y="596" width="190" height="44" rx="9" fill="#130818" stroke="#a77780" stroke-width="1.6"/>
+      <text x="345" y="614" font-size="13" fill="#acb8ca">Vodou · Candomblé</text><text x="345" y="631" font-size="10" fill="#8f8a79">D20 · Haiti/Brazil/Cuba</text></g></a>
   </g>
 
   
-  <g font-size="11.5" fill="#5a5750">
-    <rect x="20" y="726" width="910" height="56" rx="10" fill="#efe9db"/>
-    <line x1="44" y1="754" x2="96" y2="754" stroke="#3a4a63" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <g font-size="11.5" fill="#5a4862">
+    <rect x="20" y="726" width="910" height="56" rx="10" fill="#2f1d36"/>
+    <line x1="44" y1="754" x2="96" y2="754" stroke="#96a6bf" stroke-width="1.8" marker-end="url(#arrow)"/>
     <text x="104" y="758">descent / derivation</text>
-    <line x1="220" y1="754" x2="272" y2="754" stroke="#a67c3d" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
+    <line x1="220" y1="754" x2="272" y2="754" stroke="#c49a5b" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arrowd)"/>
     <text x="280" y="758">influence / fusion</text>
-    <line x1="430" y1="754" x2="482" y2="754" stroke="#a67c3d" stroke-width="1.8" stroke-dasharray="5 4" marker-start="url(#arrowdS)" marker-end="url(#arrowd)"/>
+    <line x1="430" y1="754" x2="482" y2="754" stroke="#c49a5b" stroke-width="1.8" stroke-dasharray="5 4" marker-start="url(#arrowdS)" marker-end="url(#arrowd)"/>
     <text x="490" y="758">mutual absorption</text>
-    <rect x="620" y="742" width="60" height="24" rx="6" fill="#f3efe6" stroke="#a89f88" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <rect x="620" y="742" width="60" height="24" rx="6" fill="#27152f" stroke="#807760" stroke-width="1.2" stroke-dasharray="4 3"/>
     <text x="690" y="758">background source (no own Day)</text>
   </g>
 </svg>
@@ -228,7 +232,7 @@
   <span class="tag">What is deliberately not drawn</span>
   <h2>The restraint</h2>
   <ul>
-    <li><strong>Buddhism</strong> appears because without it the Indian and East Asian networks fall apart; its deep reading lives not here but on the <a href="https://cissy0802.github.io/buddhism/" style="color:var(--gold)">Buddhism site</a> (click the node).</li>
+    <li><strong>Buddhism</strong> appears because without it the Indian and East Asian networks fall apart; its deep reading lives not here but on the <a href="https://cissy0802.github.io/buddhism/" style="color:#c49a5b">Buddhism site</a> (click the node).</li>
     <li><strong>Indigenous and shamanic traditions (D19)</strong> are not drawn: they are multi-origin traditions spread across every continent, with no single lineage line to draw — forcing one would distort.</li>
     <li><strong>The comparative topics (D21–28)</strong> are cross-cutting perspectives, not nodes.</li>
     <li><strong>The "background sources" (Vedic tradition, śramaṇa movement) get no Day of their own</strong>: they are the intellectual soil of a formative era, not living traditions with adherents and distributions today — the four-dimension card (history / distribution / beliefs / practice) simply does not fit them. The Vedic evolution is told inside D9 Hinduism; the śramaṇa story lives in D11 Jainism and in "Turning Points" below.</li>

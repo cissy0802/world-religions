@@ -5,63 +5,67 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>World Religions Day 8: Sufism</title>
+<meta content="#22102a" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
   :root{
-    --bg:#f6f3ec; --ink:#2b2b2b; --soft:#5a5750;
-    --slate:#3a4a63; --slate-d:#2a3648; --gold:#a67c3d; --gold-l:#c49a54;
-    --line:#e3dccd; --card:#fffdf8; --shade:#efe9db;
+    --bg:#221f18; --ink:#c6c6c6; --soft:#aba8a1;
+    --slate:#96a6bf; --slate-d:#acb8ca; --gold:#c49a5b; --gold-l:#b28842;
+    --line:#423b2c; --card:#13110c; --shade:#342e20;
   }
   *{box-sizing:border-box}
   body{
-    margin:0; background:var(--bg); color:var(--ink);
+    margin:0; background:#22102a; color:#c6c6c6;
     font-family:Georgia,"Noto Serif SC",serif; line-height:1.85;
     -webkit-font-smoothing:antialiased; overflow-wrap:break-word;
   }
   .wrap{max-width:820px; margin:0 auto; padding:44px 22px 80px}
   header.top{border-bottom:2px solid var(--slate); padding-bottom:22px; margin-bottom:8px}
-  .kicker{font-size:.82rem; letter-spacing:.22em; color:var(--gold); text-transform:uppercase; margin-bottom:12px}
-  h1{font-size:2.15rem; margin:.1em 0 .3em; color:var(--slate-d); letter-spacing:.02em}
-  .meta{font-size:.9rem; color:var(--soft)}
+  .kicker{font-size:.82rem; letter-spacing:.22em; color:#c49a5b; text-transform:uppercase; margin-bottom:12px}
+  h1{font-size:2.15rem; margin:.1em 0 .3em; color:#acb8ca; letter-spacing:.02em}
+  .meta{font-size:.9rem; color:#aba8a1}
   .meta span{margin-right:14px}
-  .lede{font-size:1.08rem; color:var(--slate-d); background:var(--shade);
+  .lede{font-size:1.08rem; color:#acb8ca; background:#2f1d36;
     border-left:4px solid var(--gold); padding:16px 20px; margin:26px 0; border-radius:0 6px 6px 0}
-  .shema{font-style:italic; color:var(--slate); text-align:center; margin:30px 0; font-size:1.12rem}
-  .shema small{display:block; font-style:normal; color:var(--soft); font-size:.82rem; margin-top:6px}
+  .shema{font-style:italic; color:#96a6bf; text-align:center; margin:30px 0; font-size:1.12rem}
+  .shema small{display:block; font-style:normal; color:#aba8a1; font-size:.82rem; margin-top:6px}
 
-  section.card{background:var(--card); border:1px solid var(--line); border-radius:10px;
-    padding:26px 28px; margin:26px 0; box-shadow:0 1px 3px rgba(58,74,99,.05)}
+  section.card{background:#130818; border:1px solid var(--line); border-radius:10px;
+    padding:26px 28px; margin:26px 0; box-shadow:0 1px 3px rgba(0,0,0,.05)}
   .tag{display:inline-block; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase;
-    color:#fff; background:var(--slate); padding:4px 11px; border-radius:20px; margin-bottom:10px}
-  h2{font-size:1.32rem; color:var(--slate-d); margin:.2em 0 .5em}
-  h3{font-size:1.02rem; color:var(--gold); margin:1.3em 0 .3em}
+    color:#ffffff; background:#3a4a63; padding:4px 11px; border-radius:20px; margin-bottom:10px}
+  h2{font-size:1.32rem; color:#acb8ca; margin:.2em 0 .5em}
+  h3{font-size:1.02rem; color:#c49a5b; margin:1.3em 0 .3em}
   p{margin:.7em 0}
-  strong{color:var(--slate-d)}
+  strong{color:#acb8ca}
   ul{margin:.6em 0; padding-left:1.3em}
   li{margin:.4em 0}
-  .num{color:var(--gold); font-weight:bold}
+  .num{color:#c49a5b; font-weight:bold}
 
   figure{margin:28px 0; text-align:center}
-  figcaption{font-size:.82rem; color:var(--soft); margin-top:8px}
+  figcaption{font-size:.82rem; color:#aba8a1; margin-top:8px}
   svg{max-width:100%; height:auto}
 
-  .misread{background:var(--shade); border-radius:10px; padding:22px 26px; margin:26px 0}
-  .misread h2{color:#9a4530}
+  .misread{background:#2f1d36; border-radius:10px; padding:22px 26px; margin:26px 0}
+  .misread h2{color:#ce7964}
   .mis{margin:.9em 0}
-  .mis b{color:#9a4530}
-  .mis span{color:var(--slate-d)}
+  .mis b{color:#ce7964}
+  .mis span{color:#acb8ca}
 
-  .bridge{border:1px dashed var(--gold-l); border-radius:10px; padding:22px 26px; margin:26px 0; background:#fdfaf2}
-  .bridge h2{color:var(--gold)}
+  .bridge{border:1px dashed var(--gold-l); border-radius:10px; padding:22px 26px; margin:26px 0; background:#190b20}
+  .bridge h2{color:#c49a5b}
 
   details{border-top:1px solid var(--line); padding:14px 2px}
-  details summary{cursor:pointer; font-weight:bold; color:var(--slate-d); list-style:none}
+  details summary{cursor:pointer; font-weight:bold; color:#acb8ca; list-style:none}
   details summary::-webkit-details-marker{display:none}
-  details summary::before{content:"▸ "; color:var(--gold)}
+  details summary::before{content:"▸ "; color:#c49a5b}
   details[open] summary::before{content:"▾ "}
-  details .ans{margin-top:10px; background:var(--shade); border-radius:8px; padding:14px 18px; color:var(--soft)}
-  .think-h{font-size:1.32rem; color:var(--slate-d); margin:40px 0 6px}
+  details .ans{margin-top:10px; background:#2f1d36; border-radius:8px; padding:14px 18px; color:#aba8a1}
+  .think-h{font-size:1.32rem; color:#acb8ca; margin:40px 0 6px}
 
-  .neutral{font-size:.82rem; color:var(--soft); border-top:1px solid var(--line); margin-top:44px; padding-top:16px; font-style:italic}
+  .neutral{font-size:.82rem; color:#aba8a1; border-top:1px solid var(--line); margin-top:44px; padding-top:16px; font-style:italic}
 </style>
 </head>
 <body>
@@ -84,34 +88,34 @@
 <p>What brought Sufism into the mainstream was the great synthesizer <strong>al-Ghazali (d. 1111)</strong>: originally a leading jurist, he turned to Sufism after a crisis of faith and wrote <em>The Revival of the Religious Sciences</em>, arguing that inner practice is <strong>the fulfilment of Islamic law, not a departure from it</strong>. After him, the theory reached its heights—<strong>Ibn Arabi (d. 1240)</strong> proposed "the unity of being" (wahdat al-wujud), and Rumi (d. 1273) wrote the metaphysics of love into enduring literature in his Persian epic, the <em>Masnavi</em>. Meanwhile, over the 12th–13th centuries, once-loose circles of master and disciples <strong>crystallized into "orders" (tariqa, literally "the path")</strong>: centered on a sheikh (master) and transmitting their method through a "golden chain" of lineage (silsila) traced back to the Prophet. Sufism now had an organizational skeleton.</p>
 <figure>
 <svg aria-label="Timeline of Sufism" role="img" viewbox="0 0 760 150" xmlns="http://www.w3.org/2000/svg">
-<line stroke="#3a4a63" stroke-width="2" x1="30" x2="730" y1="80" y2="80"></line>
-<g fill="#5a5750" font-family="Georgia,serif" font-size="11" text-anchor="middle">
+<line stroke="#96a6bf" stroke-width="2" x1="30" x2="730" y1="80" y2="80"></line>
+<g fill="#5a4862" font-family="Georgia,serif" font-size="11" text-anchor="middle">
 <g>
-<polygon fill="#a67c3d" points="90,80 85,72 95,72"></polygon>
-<circle cx="90" cy="80" fill="#a67c3d" r="4"></circle>
+<polygon fill="#c49a5b" points="90,80 85,72 95,72"></polygon>
+<circle cx="90" cy="80" fill="#c49a5b" r="4"></circle>
 <text x="90" y="104">8th c.</text>
-<text fill="#2a3648" x="90" y="60">Asceticism &amp; love</text>
+<text fill="#acb8ca" x="90" y="60">Asceticism &amp; love</text>
 </g>
 <g>
-<circle cx="230" cy="80" fill="#9a4530" r="5"></circle>
+<circle cx="230" cy="80" fill="#ce7964" r="5"></circle>
 <text x="230" y="104">922</text>
-<text fill="#2a3648" x="230" y="60">Al-Hallaj martyred</text>
+<text fill="#acb8ca" x="230" y="60">Al-Hallaj martyred</text>
 </g>
 <g>
-<circle cx="380" cy="80" fill="#3a4a63" r="4"></circle>
+<circle cx="380" cy="80" fill="#96a6bf" r="4"></circle>
 <text x="380" y="104">c.1111</text>
-<text fill="#2a3648" x="380" y="60">Al-Ghazali synthesis</text>
+<text fill="#acb8ca" x="380" y="60">Al-Ghazali synthesis</text>
 </g>
 <g>
-<circle cx="530" cy="80" fill="#3a4a63" r="4"></circle>
+<circle cx="530" cy="80" fill="#96a6bf" r="4"></circle>
 <text x="530" y="104">13th c.</text>
-<text fill="#2a3648" x="530" y="60">Theory at its peak</text>
+<text fill="#acb8ca" x="530" y="60">Theory at its peak</text>
 </g>
 <g>
-<polygon fill="#a67c3d" points="680,80 675,72 685,72"></polygon>
-<circle cx="680" cy="80" fill="#a67c3d" r="4"></circle>
+<polygon fill="#c49a5b" points="680,80 675,72 685,72"></polygon>
+<circle cx="680" cy="80" fill="#c49a5b" r="4"></circle>
 <text x="680" y="104">12th–13th c.</text>
-<text fill="#2a3648" x="680" y="60">Orders form</text>
+<text fill="#acb8ca" x="680" y="60">Orders form</text>
 </g>
 </g>
 </svg>
@@ -144,29 +148,29 @@
 <figure>
 <svg aria-label="The three Sufi stages: Law, Path, Reality" role="img" viewbox="0 0 720 300" xmlns="http://www.w3.org/2000/svg">
 <g font-family="Georgia,serif">
-<circle cx="185" cy="150" fill="#eef1f5" r="128" stroke="#3a4a63" stroke-width="1.5"></circle>
-<circle cx="185" cy="150" fill="#fdfaf2" r="86" stroke="#a67c3d" stroke-width="1.5"></circle>
-<circle cx="185" cy="150" fill="#f6ece6" r="46" stroke="#9a4530" stroke-width="1.5"></circle>
-<circle cx="185" cy="150" fill="#a67c3d" r="7"></circle>
+<circle cx="185" cy="150" fill="#210f29" r="128" stroke="#96a6bf" stroke-width="1.5"></circle>
+<circle cx="185" cy="150" fill="#190b20" r="86" stroke="#c49a5b" stroke-width="1.5"></circle>
+<circle cx="185" cy="150" fill="#25132d" r="46" stroke="#ce7964" stroke-width="1.5"></circle>
+<circle cx="185" cy="150" fill="#c49a5b" r="7"></circle>
 <g text-anchor="middle">
-<text fill="#2a3648" font-size="13" x="185" y="46">Shari'a · Law</text>
-<text fill="#a67c3d" font-size="13" x="185" y="86">Tariqa · Path</text>
-<text fill="#9a4530" font-size="12.5" x="185" y="122">Haqiqa · Reality</text>
+<text fill="#acb8ca" font-size="13" x="185" y="46">Shari'a · Law</text>
+<text fill="#c49a5b" font-size="13" x="185" y="86">Tariqa · Path</text>
+<text fill="#ce7964" font-size="12.5" x="185" y="122">Haqiqa · Reality</text>
 <text fill="#fffdf8" font-size="10.5" x="185" y="176">God</text>
 </g>
 <g font-size="11.5">
-<line stroke="#3a4a63" stroke-width="1.2" x1="313" x2="440" y1="150" y2="60"></line>
-<line stroke="#a67c3d" stroke-width="1.2" x1="271" x2="440" y1="150" y2="150"></line>
-<line stroke="#9a4530" stroke-width="1.2" x1="231" x2="440" y1="150" y2="240"></line>
-<text fill="#2a3648" font-size="12.5" x="450" y="52">Shell · the Law</text>
-<text fill="#5a5750" x="450" y="72">prayer, fasting, jurisprudence—</text>
-<text fill="#5a5750" x="450" y="90">the shared, obligatory outer practice</text>
-<text fill="#a67c3d" font-size="12.5" x="450" y="146">Path · the practice</text>
-<text fill="#5a5750" x="450" y="166">under a master's guidance, purifying</text>
-<text fill="#5a5750" x="450" y="184">the self, deepening through remembrance</text>
-<text fill="#9a4530" font-size="12.5" x="450" y="236">Reality · union</text>
-<text fill="#5a5750" x="450" y="256">self-annihilation (fana), realizing</text>
-<text fill="#5a5750" x="450" y="274">the One in God's living presence</text>
+<line stroke="#96a6bf" stroke-width="1.2" x1="313" x2="440" y1="150" y2="60"></line>
+<line stroke="#c49a5b" stroke-width="1.2" x1="271" x2="440" y1="150" y2="150"></line>
+<line stroke="#ce7964" stroke-width="1.2" x1="231" x2="440" y1="150" y2="240"></line>
+<text fill="#acb8ca" font-size="12.5" x="450" y="52">Shell · the Law</text>
+<text fill="#aba8a1" x="450" y="72">prayer, fasting, jurisprudence—</text>
+<text fill="#aba8a1" x="450" y="90">the shared, obligatory outer practice</text>
+<text fill="#c49a5b" font-size="12.5" x="450" y="146">Path · the practice</text>
+<text fill="#aba8a1" x="450" y="166">under a master's guidance, purifying</text>
+<text fill="#aba8a1" x="450" y="184">the self, deepening through remembrance</text>
+<text fill="#ce7964" font-size="12.5" x="450" y="236">Reality · union</text>
+<text fill="#aba8a1" x="450" y="256">self-annihilation (fana), realizing</text>
+<text fill="#aba8a1" x="450" y="274">the One in God's living presence</text>
 </g>
 </g>
 </svg>

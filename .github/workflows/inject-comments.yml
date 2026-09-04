@@ -1,7 +1,7 @@
 name: Inject Shared Scripts
 
-# After any push that touched HTML, ensure each page includes the shared
-# hub scripts (comments.js + search.js). Skips its own bot commits.
+# After any push that touched HTML: 把新页面转成深色配色，并确保每页都带上
+# hub 的共享脚本（comments.js + search.js）。跳过自己的 bot commit。
 
 on:
   push:
@@ -18,6 +18,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # 新页面是 routine 生成的，配色由模型自由发挥，默认浅色。深色不靠 prompt 记得，
+      # 靠这一步兜住：darken.py 幂等，已经转过的页面会跳过。
+      - name: Darken bedtime-reading pages
+        run: python3 darken.py
 
       - name: Inject missing shared script tags
         run: |
@@ -47,5 +52,10 @@ jobs:
             exit 0
           fi
           git add -A
-          git commit -m "Auto-inject shared scripts (comments + search)"
-          git push
+          git commit -m "Auto-process pages (dark theme + shared scripts)"
+          # bake-tts 也在改 HTML，两个 workflow 撞车时先 rebase 再推。
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && break
+            echo "push attempt $i failed, retrying..."
+            sleep 3
+          done
